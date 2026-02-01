@@ -279,12 +279,13 @@ class LlamaAttention(nn.Module):
     ) -> Tuple[torch.Tensor, Optional[torch.Tensor], Optional[Tuple[torch.Tensor]]]:
         input_shape = hidden_states.shape[:-1]
         hidden_shape = (*input_shape, -1, self.head_dim)
+        past_seen_tokens = past_key_value.get_seq_length(self.layer_idx)
+        past_lr_seen_tokens = past_lr_cache.get_seq_length(self.layer_idx)
 
-        query_states = self.q_proj(hidden_states, None, None).view(hidden_shape).transpose(1, 2)
+        query_states = self.q_proj(hidden_states, None, None, None, None).view(hidden_shape).transpose(1, 2)
         key_states = self.k_proj(hidden_states).view(hidden_shape).transpose(1, 2)
-        value_states, lr_value_states, lr_B, rank = self.v_proj(hidden_states, past_lr_cache, self.layer_idx)
+        value_states, lr_value_states, lr_B, rank = self.v_proj(hidden_states, past_lr_cache, self.layer_idx, past_seen_tokens, past_lr_seen_tokens)
         lr_B = lr_B.view(rank, -1, self.head_dim).transpose(0, 1)
-        value_states = value_states.view(hidden_shape).transpose(1, 2)
 
         cos, sin = position_embeddings
         query_states, key_states = apply_rotary_pos_emb(query_states, key_states, cos, sin)
@@ -292,7 +293,11 @@ class LlamaAttention(nn.Module):
         if past_key_value is not None:
             # sin and cos are specific to RoPE models; cache_position needed for the static cache
             cache_kwargs = {"sin": sin, "cos": cos, "cache_position": cache_position}
-            key_states, value_states = past_key_value.update(key_states, value_states, self.layer_idx, cache_kwargs)
+            if key_states.shape[-2] > past_seen_tokens - past_lr_seen_tokens:
+                key_states = key_states[:, :, past_seen_tokens - past_lr_seen_tokens:, :]
+            key_states, value_states = past_key_value.update(key_states, value_states, self.layer_idx, past_lr_seen_tokens, cache_kwargs)
+            if self.v_proj.lrcache:
+                value_states = value_states.view(input_shape[0], past_lr_cache.get_seq_length(self.layer_idx), -1, self.head_dim).transpose(1, 2)
 
         attention_interface: Callable = eager_attention_forward
         if self.config._attn_implementation != "eager":

@@ -387,6 +387,7 @@ class LRCache(Cache):
 
         return self.value_cache[layer_idx]
 
+
     def get_seq_length(self, layer_idx: Optional[int] = 0) -> int:
         """Returns the sequence length of the cached states. A layer index can be optionally passed."""
         # TODO: deprecate this function in favor of `cache_position`
@@ -485,11 +486,13 @@ class DynamicCache(Cache):
         """
         return len(self.key_cache)
 
+
     def update(
         self,
         key_states: torch.Tensor,
         value_states: torch.Tensor,
         layer_idx: int,
+        lr_idx: Optional[int] = None,
         cache_kwargs: Optional[Dict[str, Any]] = None,
     ) -> Tuple[torch.Tensor, torch.Tensor]:
         """
@@ -510,7 +513,7 @@ class DynamicCache(Cache):
         """
         # Update the number of seen tokens
         if layer_idx == 0:
-            self._seen_tokens += key_states.shape[-2]
+            self._seen_tokens = lr_idx + key_states.shape[-2]
 
         # Update the cache
         if key_states is not None:
@@ -530,8 +533,7 @@ class DynamicCache(Cache):
                 self.key_cache[layer_idx] = torch.cat([self.key_cache[layer_idx], key_states], dim=-2)
                 self.value_cache[layer_idx] = torch.cat([self.value_cache[layer_idx], value_states], dim=-2)
 
-        return self.key_cache[layer_idx], self.value_cache[layer_idx]
-
+            return self.key_cache[layer_idx], self.value_cache[layer_idx]
 
 
     def get_seq_length(self, layer_idx: Optional[int] = 0) -> int:

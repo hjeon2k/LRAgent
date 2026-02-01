@@ -94,7 +94,7 @@ def generate_stream(
         past_key_values = None
     # retrieve past lr caches
     try:
-        past_lr_caches = model.past_lr_caches['shared']
+        past_lr_caches = model.past_lr_caches[name]
         past_seq_length = past_lr_caches.get_seq_length()
     except:
         past_lr_caches = None
@@ -184,9 +184,9 @@ def generate_stream(
 
                 logits = model.lm_head(out[0])
             else:
-                torch.cuda.synchronize()
-                fwd_s = time.perf_counter()
-                torch.cuda.synchronize()
+                # torch.cuda.synchronize()
+                # fwd_s = time.perf_counter()
+                # torch.cuda.synchronize()
                 out = model(
                     input_ids=torch.as_tensor(
                         [[token] if not sent_interrupt else output_ids],
@@ -196,15 +196,15 @@ def generate_stream(
                     past_key_values=past_key_values if not sent_interrupt else None,
                     past_lr_caches=past_lr_caches if not sent_interrupt else None,
                 )
-                torch.cuda.synchronize()
-                fwd_e = time.perf_counter()
-                torch.cuda.synchronize()
-                total_t += fwd_e - fwd_s
+                # torch.cuda.synchronize()
+                # fwd_e = time.perf_counter()
+                # torch.cuda.synchronize()
+                # total_t += fwd_e - fwd_s
                 sent_interrupt = False
                 logits = out.logits
             past_key_values = out.past_key_values
             past_lr_caches = out.past_lr_caches
-        model.past_key_values['shared'], model.past_lr_caches['shared'] = past_key_values, past_lr_caches
+        model.past_key_values['shared'], model.past_lr_caches[name] = past_key_values, past_lr_caches
 
         if logits_processor:
             if repetition_penalty > 1.0:

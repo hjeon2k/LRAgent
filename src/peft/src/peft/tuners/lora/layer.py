@@ -698,7 +698,8 @@ class Linear(nn.Module, LoraLayer):
 
         return output_tensor
 
-    def forward(self, x: torch.Tensor, past_lr_cache: None, layer_idx: int, *args: Any, **kwargs: Any) -> torch.Tensor:
+    def forward(self, x: torch.Tensor, past_lr_cache: None, layer_idx: int,
+                past_seen_tokens: int, past_lr_seen_tokens: int, *args: Any, **kwargs: Any) -> torch.Tensor:
         self._check_forward_args(x, *args, **kwargs)
         adapter_names = kwargs.pop("adapter_names", None)
 
@@ -711,7 +712,10 @@ class Linear(nn.Module, LoraLayer):
         elif self.merged:
             result = self.base_layer(x, *args, **kwargs)
         else:
-            result = self.base_layer(x, *args, **kwargs)
+            if self.lrcache and x.shape[-2] > past_seen_tokens - past_lr_seen_tokens:
+                result = self.base_layer(x[:, past_seen_tokens - past_lr_seen_tokens:, :], *args, **kwargs)
+            else:
+                result = self.base_layer(x, *args, **kwargs)
             torch_result_dtype = result.dtype
 
             lora_A_keys = self.lora_A.keys()
@@ -729,9 +733,9 @@ class Linear(nn.Module, LoraLayer):
                     if not self.lrcache:
                         result = result + lora_B(lora_A(dropout(x))) * scaling
                     else:
-                        intermediate_result = past_lr_cache.update(lora_A(dropout(x)), layer_idx) * scaling
+                        intermediate_result = past_lr_cache.update(lora_A(dropout(x)), layer_idx).to(torch_result_dtype)
 
-                        result, intermediate_result = result.to(torch_result_dtype), intermediate_result.to(torch_result_dtype)
+                        result = result.to(torch_result_dtype)
 
                         return result, intermediate_result, lora_B.weight.transpose(0, 1).to(torch_result_dtype), lora_B.weight.shape[1] 
                 else:

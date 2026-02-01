@@ -1176,9 +1176,6 @@ inline __device__ void compute_attn_1rowblock_splitkv(const Params &params, cons
 
     }
 
-    FLASH_NAMESPACE::cp_async_wait<0>();
-    __syncthreads();
-
     // Epilogue
     // LoRA: Use dual version to normalize both acc_o and tLOrLO with the same 1/row_sum scale
     Tensor lse = softmax.template normalize_softmax_lse_dual</*Is_dropout=*/false, Split>(acc_o, tLOrLO, params.scale_softmax);
