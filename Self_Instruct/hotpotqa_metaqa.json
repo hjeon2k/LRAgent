@@ -1,0 +1,3262 @@
+[
+    {
+        "Question": "The famous musician Jimi Hendrix is known for playing which musical instrument?",
+        "Answer": "The guitar"
+    },
+    {
+        "Question": "The largest living species of eagle, the Philippine eagle, is found in which country?",
+        "Answer": "The Philippines"
+    },
+    {
+        "Question": "The famous artist Pablo Picasso created which famous artwork, a portrait of a woman?",
+        "Answer": "Guernica"
+    },
+    {
+        "Question": "The process of sedimentation involves the settling of which particles to the bottom of a liquid?",
+        "Answer": "Solids"
+    },
+    {
+        "Question": "The ancient Greek goddess of wisdom was which?",
+        "Answer": "Athena"
+    },
+    {
+        "Question": "The process of mitosis is a type of cell division that results in which type of cell?",
+        "Answer": "Two daughter cells"
+    },
+    {
+        "Question": "The famous explorer Vasco da Gama was the first European to navigate a route from which continent to which continent in 1497?",
+        "Answer": "Europe to Asia"
+    },
+    {
+        "Question": "The process of erosion involves the wearing away of which natural feature by wind or water?",
+        "Answer": "Rock or soil"
+    },
+    {
+        "Question": "The process by which an object's velocity increases as it moves closer to a source of gravitational pull is known as what?",
+        "Answer": "Acceleration"
+    },
+    {
+        "Question": "The process by which an animal's body temperature is regulated is known as what?",
+        "Answer": "Thermoregulation"
+    },
+    {
+        "Question": "The process of weathering involves the breakdown of which rock type?",
+        "Answer": "Granite"
+    },
+    {
+        "Question": "The process of electrolysis occurs in which type of chemical reaction?",
+        "Answer": "Redox reaction"
+    },
+    {
+        "Question": "The famous music group \"The Rolling Stones\" released which song in 1968 that is considered one of their most popular hits?",
+        "Answer": "Jumpin' Jack Flash"
+    },
+    {
+        "Question": "The famous music group \"The Who\" released which song in 1965 that is considered one of their most popular hits?",
+        "Answer": "My Generation"
+    },
+    {
+        "Question": "The famous scientist who developed the theory of electromagnetism was James _______.",
+        "Answer": "Clerk Maxwell"
+    },
+    {
+        "Question": "The famous music group \"The Beach Boys\" released which song in 1963 that is considered one of their most popular hits?",
+        "Answer": "Surfin' U.S.A."
+    },
+    {
+        "Question": "The famous music group \"The Doors\" released which song in 1967 that is considered one of their most popular hits?",
+        "Answer": "Light My Fire"
+    },
+    {
+        "Question": "The process of mitosis involves the division of which cell component?",
+        "Answer": "Chromosomes"
+    },
+    {
+        "Question": "The concept of the four humors was first proposed by which ancient Greek physician?",
+        "Answer": "Galen"
+    },
+    {
+        "Question": "The world's largest living organism, a fungus that covers over 2,200 acres in Oregon, is estimated to be around which age?",
+        "Answer": "2,400 years"
+    },
+    {
+        "Question": "The process of water flowing downhill is an example of which type of energy?",
+        "Answer": "Potential energy"
+    },
+    {
+        "Question": "The famous scientist Charles Darwin is credited with developing which theory?",
+        "Answer": "Theory of evolution"
+    },
+    {
+        "Question": "The famous author J.K. Rowling wrote which popular book series?",
+        "Answer": "Harry Potter"
+    },
+    {
+        "Question": "The process of breaking down organic matter into simpler substances is called what?",
+        "Answer": "Decomposition"
+    },
+    {
+        "Question": "The process of a gas changing directly to a liquid is known as what?",
+        "Answer": "Condensation"
+    },
+    {
+        "Question": "The famous mathematician and physicist Isaac Newton developed which three laws of motion?",
+        "Answer": "The laws of motion"
+    },
+    {
+        "Question": "The process of electrolysis is used to extract which metal from its ore?",
+        "Answer": "Aluminum"
+    },
+    {
+        "Question": "The process of water cycling through the environment, including evaporation, condensation, and precipitation, is known as which phenomenon?",
+        "Answer": "The Water Cycle"
+    },
+    {
+        "Question": "The process of rocks breaking down into smaller particles through weathering and erosion, is known as which process?",
+        "Answer": "Sedimentation"
+    },
+    {
+        "Question": "The famous physicist Stephen Hawking made groundbreaking contributions to our understanding of which phenomenon?",
+        "Answer": "Black Holes"
+    },
+    {
+        "Question": "The famous novel \"To Kill a Mockingbird\" by Harper Lee explores issues of racial injustice and tolerance in which state?",
+        "Answer": "Alabama"
+    },
+    {
+        "Question": "The famous novel \"The Great Gatsby\" by F. Scott Fitzgerald is set in which decade?",
+        "Answer": "The 1920s"
+    },
+    {
+        "Question": "The famous scientist and mathematician Archimedes was born in which city?",
+        "Answer": "Syracuse"
+    },
+    {
+        "Question": "The process of a star's life cycle where it runs out of fuel and expands to become a red giant is called which stage?",
+        "Answer": "Red giant phase"
+    },
+    {
+        "Question": "The process of a river's flow that is influenced by the gravitational pull of the sun is known as what?",
+        "Answer": "Solstices"
+    },
+    {
+        "Question": "The famous scientist Albert Einstein was born in which European city?",
+        "Answer": "Germany"
+    },
+    {
+        "Question": "The process of a river flowing back into the ocean is known as which type of flow?",
+        "Answer": "Ebb"
+    },
+    {
+        "Question": "The process of a volcano erupting with lava and ash is known as which type of eruption?",
+        "Answer": "Explosive"
+    },
+    {
+        "Question": "The process of water freezing into ice is an example of what type of change?",
+        "Answer": "Physical change"
+    },
+    {
+        "Question": "The process of electrolysis involves the use of which type of current to split a compound into its constituent elements?",
+        "Answer": "Direct"
+    },
+    {
+        "Question": "The concept of the four elements (earth, air, fire, and water) was first described by which ancient Greek philosopher?",
+        "Answer": "Empedocles"
+    },
+    {
+        "Question": "The famous painting \"The Mona Lisa\" is a work of what style of art?",
+        "Answer": "Renaissance"
+    },
+    {
+        "Question": "The largest living species of lizard, found in Indonesia, is the Komodo _______.",
+        "Answer": "Dragon"
+    },
+    {
+        "Question": "The famous artist who created the iconic sculpture \"The Thinker\" is which French artist?",
+        "Answer": "Auguste Rodin"
+    },
+    {
+        "Question": "The first permanent English settlement in Australia was established in which year?",
+        "Answer": "1788"
+    },
+    {
+        "Question": "The highest temperature ever recorded in the atmosphere was in which location?",
+        "Answer": "El Azizia, Libya"
+    },
+    {
+        "Question": "The process of a plant growing in a soilless medium, often using nutrient-rich water, is known as which method?",
+        "Answer": "Aeroponics"
+    },
+    {
+        "Question": "The process of fossilization occurs when organic matter is replaced with which mineral?",
+        "Answer": "Calcite"
+    },
+    {
+        "Question": "The process of metamorphosis occurs in which type of animal?",
+        "Answer": "Insects"
+    },
+    {
+        "Question": "The process of decomposition occurs when organic matter is broken down by which microorganisms?",
+        "Answer": "Bacteria"
+    },
+    {
+        "Question": "The famous mathematical constant pi is approximately equal to which decimal value?",
+        "Answer": "3.14"
+    },
+    {
+        "Question": "The ancient civilization that built the Great Wall of China is which?",
+        "Answer": "Qin dynasty"
+    },
+    {
+        "Question": "The famous painting by Vincent van Gogh, created in 1889, depicts a field of sunflowers.",
+        "Answer": "Sunflowers"
+    },
+    {
+        "Question": "The process of fermentation occurs in which type of food production?",
+        "Answer": "Bread-making"
+    },
+    {
+        "Question": "The famous music composer 'Pyotr Ilyich Tchaikovsky' was born in which city in 1840?",
+        "Answer": "Votkinsk"
+    },
+    {
+        "Question": "The process of osmosis occurs in which type of environment?",
+        "Answer": "Aqueous solution"
+    },
+    {
+        "Question": "The process of fermentation occurs in which type of cell division?",
+        "Answer": "Binary fission"
+    },
+    {
+        "Question": "The famous explorer Christopher Columbus made four voyages across the Atlantic Ocean in which century?",
+        "Answer": "15th"
+    },
+    {
+        "Question": "The famous musician Beethoven composed his famous symphony No. 5 in which key?",
+        "Answer": "C minor"
+    },
+    {
+        "Question": "The process of a gas changing directly to a solid is known as what?",
+        "Answer": "Deposition"
+    },
+    {
+        "Question": "The process of sedimentation involves the settling of particles to the bottom of which?",
+        "Answer": "A body of water"
+    },
+    {
+        "Question": "The process of mitosis is a type of cell division that results in which number of daughter cells?",
+        "Answer": "Two"
+    },
+    {
+        "Question": "The famous artist Pablo Picasso was born in which year?",
+        "Answer": "1881"
+    },
+    {
+        "Question": "The process of respiration involves the breakdown of glucose to produce which energy-rich molecule?",
+        "Answer": "ATP"
+    },
+    {
+        "Question": "The famous city of Paris is built on which river in Europe?",
+        "Answer": "Seine"
+    },
+    {
+        "Question": "The famous music group The Rolling Stones released their debut album in which year?",
+        "Answer": "1964"
+    },
+    {
+        "Question": "The process of electrolysis involves the use of an electric current to drive a chemical reaction, resulting in the separation of which substance from a mixture?",
+        "Answer": "Metal"
+    },
+    {
+        "Question": "The highest mountain peak in North America is Denali, formerly known as which mountain?",
+        "Answer": "Mount McKinley"
+    },
+    {
+        "Question": "The famous scientist Albert Einstein developed the theory of which relativity?",
+        "Answer": "General"
+    },
+    {
+        "Question": "The highest speed recorded by a manned vehicle was achieved by which spacecraft?",
+        "Answer": "Apollo 10"
+    },
+    {
+        "Question": "The process by which the Earth's atmosphere is affected by the sun's solar wind is known as what?",
+        "Answer": "Geomagnetic storm"
+    },
+    {
+        "Question": "The process of a rock's formation from molten lava is known as which geological process?",
+        "Answer": "Solidification"
+    },
+    {
+        "Question": "The largest planet in our solar system is Jupiter, which is known for its distinctive feature of having a massive storm system known as the Great _______?",
+        "Answer": "Red Spot"
+    },
+    {
+        "Question": "The ancient city of Pompeii was destroyed by the eruption of Mount _______ in 79 AD?",
+        "Answer": "Vesuvius"
+    },
+    {
+        "Question": "The process of photosynthesis occurs in the presence of _______?",
+        "Answer": "Chlorophyll"
+    },
+    {
+        "Question": "The famous artist Leonardo da Vinci painted the Mona Lisa in which year?",
+        "Answer": "1503"
+    },
+    {
+        "Question": "The first man-made object to orbit the Earth was which spacecraft in 1957?",
+        "Answer": "Sputnik 1"
+    },
+    {
+        "Question": "The famous novel by Jane Austen, published in 1813, is a romantic comedy that follows the lives of the Bennett sisters in which English town?",
+        "Answer": "Longbourn"
+    },
+    {
+        "Question": "The famous novel by Fyodor Dostoevsky, published in 1866, follows the story of a young man who kills an old pawnbroker in which Russian city?",
+        "Answer": "St. Petersburg"
+    },
+    {
+        "Question": "The famous music group The Beach Boys released their debut album in which year?",
+        "Answer": "1961"
+    },
+    {
+        "Question": "The largest living species of shark is the whale shark, which can grow up to 40 feet in length and feed on plankton and small fish. What is the average lifespan of a whale shark in the wild?",
+        "Answer": "70-100 years"
+    },
+    {
+        "Question": "The ancient city of Pompeii was destroyed by the eruption of Mount Vesuvius in 79 AD, and is now a popular archaeological site in Italy. What was the primary cause of the destruction of Pompeii?",
+        "Answer": "Volcanic eruption"
+    },
+    {
+        "Question": "The process of mitosis is a type of cell division that results in two daughter cells with the same number of chromosomes as the parent cell. What is the primary purpose of mitosis in living organisms?",
+        "Answer": "Growth and repair"
+    },
+    {
+        "Question": "The highest mountain peak in the continent of Europe is located in which mountain range?",
+        "Answer": "Alps"
+    },
+    {
+        "Question": "The highest waterfall in the world, located in Zambia, has a height of about how many meters?",
+        "Answer": "108 meters"
+    },
+    {
+        "Question": "The ancient city of Ephesus, located in modern-day Turkey, was an important center of which ancient civilization?",
+        "Answer": "Ancient Greeks"
+    },
+    {
+        "Question": "The largest desert in Asia is the?",
+        "Answer": "Gobi Desert"
+    },
+    {
+        "Question": "The famous prehistoric monument, Newgrange, is located in which country?",
+        "Answer": "Ireland"
+    },
+    {
+        "Question": "The highest mountain peak in Africa is located in which mountain range?",
+        "Answer": "The Atlas Mountains"
+    },
+    {
+        "Question": "The process of a river's movement where it flows downhill is called which phenomenon?",
+        "Answer": "Gravity-driven flow"
+    },
+    {
+        "Question": "The famous mathematician and computer scientist Alan Turing is credited with developing which famous test?",
+        "Answer": "The Turing Test"
+    },
+    {
+        "Question": "The Taj Mahal is a famous monument located in which city?",
+        "Answer": "Agra"
+    },
+    {
+        "Question": "The chemical symbol for tin is which one-letter symbol?",
+        "Answer": "Sn"
+    },
+    {
+        "Question": "The ancient city of Chichen Itza is located in which country?",
+        "Answer": "Mexico"
+    },
+    {
+        "Question": "The ancient city of Bagan is located in which country?",
+        "Answer": "Myanmar"
+    },
+    {
+        "Question": "The ancient Greek philosopher Aristotle was a student of which famous philosopher?",
+        "Answer": "Plato"
+    },
+    {
+        "Question": "The ancient Greek god of the sea was which deity?",
+        "Answer": "Poseidon"
+    },
+    {
+        "Question": "The highest waterfall in the world, by volume of water, is located in which African country?",
+        "Answer": "Angola"
+    },
+    {
+        "Question": "The famous ship that sank in 1912 after colliding with an iceberg was which British passenger liner?",
+        "Answer": "RMS Titanic"
+    },
+    {
+        "Question": "The largest living species of tortoise is the Aldabra tortoise, which can be found in which island group?",
+        "Answer": "The Seychelles"
+    },
+    {
+        "Question": "The process of a river's flow that is influenced by the gravitational pull of the moon is known as what?",
+        "Answer": "Tides"
+    },
+    {
+        "Question": "The largest living species of bird, the ostrich, can grow up to how many meters in height?",
+        "Answer": "2.8 meters"
+    },
+    {
+        "Question": "The process of a tree's growth that occurs when a branch or root is cut, and a new growth emerges from the cut area, is known as what?",
+        "Answer": "Regeneration"
+    },
+    {
+        "Question": "The ancient civilization of Egypt was known for building which type of structure?",
+        "Answer": "Pyramids"
+    },
+    {
+        "Question": "The process of electrolysis involves the use of an electric current to separate which substance from a mixture?",
+        "Answer": "Metals"
+    },
+    {
+        "Question": "The process by which the body's immune system fights off infections and diseases is known as what?",
+        "Answer": "Immunity"
+    },
+    {
+        "Question": "The first manned mission to orbit the Earth was achieved by which Soviet spacecraft in 1961?",
+        "Answer": "Vostok 1"
+    },
+    {
+        "Question": "The first permanent French settlement in North America was established at which location in 1604?",
+        "Answer": "Port-Royal"
+    },
+    {
+        "Question": "The famous physicist Stephen Hawking developed the theory of which phenomenon in 1974?",
+        "Answer": "Hawking radiation"
+    },
+    {
+        "Question": "The first woman to win the Nobel Prize in Literature was which Swedish author in 1909?",
+        "Answer": "Selma Lagerl\u00f6f"
+    },
+    {
+        "Question": "The process of osmosis occurs when water molecules move through a selectively permeable membrane into which type of cell?",
+        "Answer": "Hypotonic"
+    },
+    {
+        "Question": "The process of sedimentation involves the settling of which particles at the bottom of a liquid?",
+        "Answer": "Heavy particles"
+    },
+    {
+        "Question": "The process of electrolysis involves the use of which device to split a substance into its components?",
+        "Answer": "Electrode"
+    },
+    {
+        "Question": "The famous city of Venice is built on which type of terrain?",
+        "Answer": "Marshes"
+    },
+    {
+        "Question": "The famous artist Vincent van Gogh cut off part of his ear during a mental health episode in which city?",
+        "Answer": "Arles, France"
+    },
+    {
+        "Question": "The famous composer Ludwig van Beethoven was a child prodigy and began composing music at which age?",
+        "Answer": "12"
+    },
+    {
+        "Question": "The process of meiosis occurs in which stage of a cell's life cycle?",
+        "Answer": "Prophase"
+    },
+    {
+        "Question": "The process of photosynthesis involves the conversion of which type of light into chemical energy?",
+        "Answer": "Solar"
+    },
+    {
+        "Question": "The concept of the \"Dark Ages\" refers to which period in European history, roughly spanning from the 5th to the 10th century?",
+        "Answer": "The Middle Ages"
+    },
+    {
+        "Question": "The famous physicist who discovered the principles of quantum mechanics is which German physicist?",
+        "Answer": "Werner Heisenberg"
+    },
+    {
+        "Question": "The ancient city of Persepolis is located in which modern-day country?",
+        "Answer": "Iran"
+    },
+    {
+        "Question": "The largest planet in our solar system, Jupiter, has a diameter of approximately how many kilometers?",
+        "Answer": "142,984"
+    },
+    {
+        "Question": "The chemical formula for glucose is which?",
+        "Answer": "C6H12O6"
+    },
+    {
+        "Question": "The process of a plant's leaves turning color and falling off in autumn is called which type of seasonal change?",
+        "Answer": "Abscission"
+    },
+    {
+        "Question": "The ancient city of Angkor Wat, located in modern-day Cambodia, was built in which century?",
+        "Answer": "The 12th century"
+    },
+    {
+        "Question": "The famous scientist who developed the polio vaccine is buried in which American city?",
+        "Answer": "Philadelphia"
+    },
+    {
+        "Question": "The largest living species of lizard, the Komodo dragon, is found in which Indonesian island?",
+        "Answer": "Komodo"
+    },
+    {
+        "Question": "The famous scientist Galileo Galilei was the first to observe which celestial body?",
+        "Answer": "The Moon"
+    },
+    {
+        "Question": "The famous scientist Isaac Newton developed which law of motion?",
+        "Answer": "The Third Law"
+    },
+    {
+        "Question": "The process of sedimentation occurs when particles settle to the bottom of which body of water?",
+        "Answer": "A lake or ocean"
+    },
+    {
+        "Question": "The largest planet in our solar system, Jupiter, has a massive storm known as which?",
+        "Answer": "The Great Red Spot"
+    },
+    {
+        "Question": "The ancient civilization of the Incas was located in which region of South America?",
+        "Answer": "Andean region"
+    },
+    {
+        "Question": "The famous novel by F. Scott Fitzgerald, published in 1925, is set in the fictional towns of West Egg and East Egg on which island?",
+        "Answer": "Long Island"
+    },
+    {
+        "Question": "The largest living species of tortoise is which one?",
+        "Answer": "Aldabra tortoise"
+    },
+    {
+        "Question": "The highest mountain peak in North America is located in which mountain range?",
+        "Answer": "The Alaska Range"
+    },
+    {
+        "Question": "The city of Paris, known for its iconic Eiffel Tower, is located in which country?",
+        "Answer": "France"
+    },
+    {
+        "Question": "The city of Tokyo, known for its vibrant streets and bustling markets, is located in which country?",
+        "Answer": "Japan"
+    },
+    {
+        "Question": "The famous music group \"The Beach Boys\" released which song in 1966 that is considered one of their most popular hits?",
+        "Answer": "Good Vibrations"
+    },
+    {
+        "Question": "The process of a river flowing underground, often through a network of tunnels and caverns, is known as which phenomenon?",
+        "Answer": "Subterranean flow"
+    },
+    {
+        "Question": "The process of a tree's growth where it sheds its leaves annually is known as which type of growth?",
+        "Answer": "Deciduous"
+    },
+    {
+        "Question": "The famous mathematician and physicist Isaac Newton developed which three laws of motion?",
+        "Answer": "Laws of Motion"
+    },
+    {
+        "Question": "The process of a rock's formation from molten lava is known as what?",
+        "Answer": "Crystallization"
+    },
+    {
+        "Question": "The process of breaking down food into smaller molecules for energy is called what?",
+        "Answer": "Digestion"
+    },
+    {
+        "Question": "The largest planet in our solar system, Jupiter, is made up of what percentage of hydrogen?",
+        "Answer": "75%"
+    },
+    {
+        "Question": "The process of a plant growing in a new location is called what?",
+        "Answer": "Germination"
+    },
+    {
+        "Question": "The process of a liquid flowing downhill due to gravity is called what?",
+        "Answer": "Gravity flow"
+    },
+    {
+        "Question": "The famous novel by George Orwell, published in 1949, depicts a dystopian future in which government surveillance and propaganda are pervasive, and the main character works in which department?",
+        "Answer": "Ministry of Truth"
+    },
+    {
+        "Question": "The first commercial airliner, the St. Petersburg-Tampa Airboat Line, was launched in which year?",
+        "Answer": "1914"
+    },
+    {
+        "Question": "The process of water freezing is an example of which type of change?",
+        "Answer": "Phase change"
+    },
+    {
+        "Question": "The first permanent human settlement in what is now the United States was established in 1565 by Spanish settlers at which location?",
+        "Answer": "St. Augustine"
+    },
+    {
+        "Question": "The concept of zero was first developed by which ancient civilization?",
+        "Answer": "Mayans"
+    },
+    {
+        "Question": "The process of osmosis occurs in which type of cell?",
+        "Answer": "Plant cell"
+    },
+    {
+        "Question": "The concept of gravity was first described by which ancient Greek philosopher?",
+        "Answer": "Aristotle"
+    },
+    {
+        "Question": "The highest temperature ever recorded on Earth was in which year?",
+        "Answer": "1913"
+    },
+    {
+        "Question": "The highest mountain peak in the continent of Europe is located in which country?",
+        "Answer": "Mont Blanc"
+    },
+    {
+        "Question": "The concept of the Big Bang theory was first proposed by which scientist?",
+        "Answer": "Georges Lemaitre"
+    },
+    {
+        "Question": "The concept of the black hole was first proposed by which scientist?",
+        "Answer": "John Michell"
+    },
+    {
+        "Question": "The famous novel \"The Lord of the Rings\" by J.R.R. Tolkien was published in which year?",
+        "Answer": "1954-1955"
+    },
+    {
+        "Question": "The process of photosynthesis involves the conversion of which energy source into chemical energy?",
+        "Answer": "Light"
+    },
+    {
+        "Question": "The process of a river's water flowing back into the ocean is known as which stage of the water cycle?",
+        "Answer": "Return to the ocean"
+    },
+    {
+        "Question": "The process of a tree's growth in diameter over time is known as which type of growth?",
+        "Answer": "Secondary growth"
+    },
+    {
+        "Question": "The process of a plant's growth in height over time is known as which type of growth?",
+        "Answer": "Primary growth"
+    },
+    {
+        "Question": "The process of a river's water flowing downhill due to gravity is known as which stage of the water cycle?",
+        "Answer": "Runoff"
+    },
+    {
+        "Question": "The process of a cell's division into two daughter cells, where the genetic material is not equally divided, is known as which stage of the cell cycle?",
+        "Answer": "Meiosis"
+    },
+    {
+        "Question": "The process of a star's life cycle where it fuses hydrogen into helium is known as which phase?",
+        "Answer": "Main Sequence"
+    },
+    {
+        "Question": "The process of a star's life cycle where it runs out of fuel and contracts to become a white dwarf is known as which phase?",
+        "Answer": "White Dwarf"
+    },
+    {
+        "Question": "The process of mitosis is a type of cell division that results in two daughter cells with the same number of chromosomes as the parent cell, which stage of the cell cycle does it occur in?",
+        "Answer": "Anaphase"
+    },
+    {
+        "Question": "The process of diffusion occurs when particles move from an area of high concentration to an area of low concentration, what type of force is responsible for this movement?",
+        "Answer": "Brownian motion"
+    },
+    {
+        "Question": "The ancient civilization of the Indus Valley Civilization is known for its sophisticated system of which?",
+        "Answer": "Irrigation"
+    },
+    {
+        "Question": "The famous novel by J.R.R. Tolkien, published in 1954, is a high fantasy epic that follows the quest of which hobbit?",
+        "Answer": "Frodo Baggins"
+    },
+    {
+        "Question": "The process of a glacier moving due to its own weight is known as which geological phenomenon?",
+        "Answer": "Creep"
+    },
+    {
+        "Question": "The famous explorer Christopher Columbus reached which continent in 1492?",
+        "Answer": "North America"
+    },
+    {
+        "Question": "The famous musician and singer-songwriter John Lennon was born in which year?",
+        "Answer": "1940"
+    },
+    {
+        "Question": "The famous physicist who developed the theory of quantum mechanics is?",
+        "Answer": "Niels Bohr"
+    },
+    {
+        "Question": "The first permanent French settlement in North America was established at which location in 1608?",
+        "Answer": "Quebec City"
+    },
+    {
+        "Question": "The first human spaceflight was achieved by Soviet cosmonaut Yuri which year?",
+        "Answer": "Gagarin 1961"
+    },
+    {
+        "Question": "The famous mathematical concept of zero was developed by which Indian mathematician in the 7th century?",
+        "Answer": "Aryabhata"
+    },
+    {
+        "Question": "The famous scientist Marie Curie was born in which country?",
+        "Answer": "Poland"
+    },
+    {
+        "Question": "The famous artist Vincent van Gogh cut off which part of his body in 1888?",
+        "Answer": "His ear"
+    },
+    {
+        "Question": "The famous scientist Galileo Galilei made several important discoveries using which tool?",
+        "Answer": "Telescope"
+    },
+    {
+        "Question": "The famous composer Ludwig van Beethoven was known for which musical instrument?",
+        "Answer": "Piano"
+    },
+    {
+        "Question": "The famous novel by Edgar Allan Poe, published in 1845, is titled which novel?",
+        "Answer": "The Raven"
+    },
+    {
+        "Question": "The famous scientist Nikola Tesla developed the concept of which electrical phenomenon?",
+        "Answer": "Alternating current"
+    },
+    {
+        "Question": "The famous artist Salvador Dali was a key figure in which art movement?",
+        "Answer": "Surrealism"
+    },
+    {
+        "Question": "The famous scientist Albert Einstein developed the theory of which concept in 1915?",
+        "Answer": "General relativity"
+    },
+    {
+        "Question": "The process of photosynthesis occurs in which type of organism?",
+        "Answer": "Plants"
+    },
+    {
+        "Question": "The capital city of France is which city?",
+        "Answer": "Paris"
+    },
+    {
+        "Question": "The process of plate tectonics is responsible for the formation of which geological feature?",
+        "Answer": "Mountains"
+    },
+    {
+        "Question": "The process of fermentation results in which type of chemical reaction?",
+        "Answer": "Oxidation"
+    },
+    {
+        "Question": "The process of a star's life cycle where it fuses helium into heavier elements is known as which phase?",
+        "Answer": "Helium flash"
+    },
+    {
+        "Question": "The process of erosion that occurs when wind or water carries away small particles of rock is called which type of erosion?",
+        "Answer": "Abrasion"
+    },
+    {
+        "Question": "The process of fossilization occurs when which type of organism is replaced with minerals over time?",
+        "Answer": "Animal"
+    },
+    {
+        "Question": "The process of photosynthesis occurs in which type of cells?",
+        "Answer": "Chloroplast cells"
+    },
+    {
+        "Question": "The process of changing from a liquid to a gas is called what?",
+        "Answer": "Vaporization"
+    },
+    {
+        "Question": "The ancient civilization of the Incas was located in which region of South America?",
+        "Answer": "The Andes Mountains"
+    },
+    {
+        "Question": "The largest living species of lizard is the what, found in Australia?",
+        "Answer": "Saltwater crocodile"
+    },
+    {
+        "Question": "The famous music group The Beatles, formed in 1960, is known for their iconic songs like \"Yesterday\" and \"Hey Jude\". Which member of the band was known for his songwriting skills?",
+        "Answer": "Paul McCartney"
+    },
+    {
+        "Question": "The first permanent Russian settlement in North America was established at which location in 1784?",
+        "Answer": "Kodiak Island"
+    },
+    {
+        "Question": "The process of converting sunlight into electrical energy is called which technology?",
+        "Answer": "Photovoltaics"
+    },
+    {
+        "Question": "The process of plant growth that occurs in the winter months is called which phenomenon?",
+        "Answer": "Dormancy"
+    },
+    {
+        "Question": "The process of water flowing through a rock or stone is called which phenomenon?",
+        "Answer": "Percolation"
+    },
+    {
+        "Question": "The process of converting chemical energy into electrical energy is called which technology?",
+        "Answer": "Fuel cells"
+    },
+    {
+        "Question": "The process of water flowing through a porous rock is called which phenomenon?",
+        "Answer": "Infiltration"
+    },
+    {
+        "Question": "The first successful human heart-lung transplant was performed by which surgeon in 1981?",
+        "Answer": "Bruce Reitz"
+    },
+    {
+        "Question": "The highest speed recorded by a commercial airliner is held by which aircraft?",
+        "Answer": "Concorde"
+    },
+    {
+        "Question": "The chemical symbol for gold is which one-letter symbol?",
+        "Answer": "au"
+    },
+    {
+        "Question": "The famous painting 'The Mona Lisa' was created by which artist?",
+        "Answer": "leonardo da vinci"
+    },
+    {
+        "Question": "The ancient city of Angkor Wat, located in Cambodia, was built by which civilization?",
+        "Answer": "khmer"
+    },
+    {
+        "Question": "The famous novel 'Pride and Prejudice' was written by which author?",
+        "Answer": "jane austen"
+    },
+    {
+        "Question": "The highest mountain peak in the Andes mountain range is located in which country?",
+        "Answer": "chile"
+    },
+    {
+        "Question": "The famous scientist Charles Darwin is credited with developing which theory?",
+        "Answer": "theory of evolution"
+    },
+    {
+        "Question": "The famous composer Pyotr Ilyich Tchaikovsky was born in which city?",
+        "Answer": "vladimir"
+    },
+    {
+        "Question": "The highest waterfall in the world, located in South America, is called which name?",
+        "Answer": "angel falls"
+    },
+    {
+        "Question": "The world's largest snowflake, recorded in Montana in 1887, measured which size?",
+        "Answer": "15 inches"
+    },
+    {
+        "Question": "The process of fermentation occurs in which type of cell?",
+        "Answer": "Prokaryotic cell"
+    },
+    {
+        "Question": "The famous explorer Vasco da Gama was the first European to navigate a route from which continent to Asia?",
+        "Answer": "Europe"
+    },
+    {
+        "Question": "The largest living structure on Earth, the Great Blue Hole, is located in which ocean?",
+        "Answer": "The Caribbean Sea"
+    },
+    {
+        "Question": "The famous painting \"The Starry Night\" by Vincent van Gogh was created in which year?",
+        "Answer": "1889"
+    },
+    {
+        "Question": "The famous painting \"The Mona Lisa\" by Leonardo da Vinci is believed to have been painted in which year?",
+        "Answer": "1503-1506"
+    },
+    {
+        "Question": "The first successful landing on Mars was achieved by which NASA spacecraft in 1976?",
+        "Answer": "Viking 1"
+    },
+    {
+        "Question": "The famous novel \"To Kill a Mockingbird\" by Harper Lee was published in which year?",
+        "Answer": "1960"
+    },
+    {
+        "Question": "The famous painting \"The Scream\" by Edvard Munch was created in which year?",
+        "Answer": "1893"
+    },
+    {
+        "Question": "The famous novel \"The Lord of the Rings\" by J.R.R. Tolkien was published in which year?",
+        "Answer": "1954"
+    },
+    {
+        "Question": "The ancient Greek philosopher Socrates was known for his method of questioning, known as which?",
+        "Answer": "Socratic Method"
+    },
+    {
+        "Question": "The process of a star's life cycle where it runs out of fuel and expands to become a red giant is known as which phase?",
+        "Answer": "Red Supergiant"
+    },
+    {
+        "Question": "The largest living species of bird, the ostrich, can grow up to how many feet in height?",
+        "Answer": "9"
+    },
+    {
+        "Question": "The famous theory in physics that describes the behavior of particles at the atomic and subatomic level is known as which theory?",
+        "Answer": "Quantum Mechanics"
+    },
+    {
+        "Question": "The process of sedimentation involves the settling of which particles to the bottom of a liquid?",
+        "Answer": "Silt and sand"
+    },
+    {
+        "Question": "The first computer bug was an actual insect that got stuck in which computer component?",
+        "Answer": "Relay"
+    },
+    {
+        "Question": "The deepest part of the Grand Canyon is located in which state?",
+        "Answer": "Arizona"
+    },
+    {
+        "Question": "The process of a river flowing backwards, typically during times of heavy rainfall or snowmelt, is known as which type of event?",
+        "Answer": "Flooding"
+    },
+    {
+        "Question": "The ancient city of Machu Picchu, built by the Incas in Peru, is an example of which type of architectural style?",
+        "Answer": "Inca architecture"
+    },
+    {
+        "Question": "The famous musician who was known as the \"King of Rock and Roll\" and died in 1977 was?",
+        "Answer": "Elvis Presley"
+    },
+    {
+        "Question": "The first woman to win a Nobel Prize was which Swedish scientist in 1903?",
+        "Answer": "Marie Curie"
+    },
+    {
+        "Question": "The capital city of Australia is which city?",
+        "Answer": "Canberra"
+    },
+    {
+        "Question": "The capital city of Brazil is which city?",
+        "Answer": "Bras\u00edlia"
+    },
+    {
+        "Question": "The famous shipwreck that sank in 1628 off the coast of Norway is which vessel?",
+        "Answer": "The Vasa"
+    },
+    {
+        "Question": "The largest living species of bear, the polar bear, is found in which Arctic region?",
+        "Answer": "The Arctic Circle"
+    },
+    {
+        "Question": "The famous musician who released the album \"Back in Black\" was?",
+        "Answer": "AC/DC"
+    },
+    {
+        "Question": "[Question text]",
+        "Answer": "[Answer text]"
+    },
+    {
+        "Question": "The famous artist Leonardo da Vinci painted the ceiling of which famous building?",
+        "Answer": "The Sistine Chapel"
+    },
+    {
+        "Question": "The famous composer Ludwig van Beethoven wrote the symphony known as \"Symphony No. 5\"?",
+        "Answer": "Yes"
+    },
+    {
+        "Question": "The process of water changing from a solid to a liquid is known as what?",
+        "Answer": "Melting"
+    },
+    {
+        "Question": "The largest planet in our solar system is Jupiter, which is known for its distinctive _______.",
+        "Answer": "Great Red Spot"
+    },
+    {
+        "Question": "The largest island in the Mediterranean Sea is the what, located between Italy and Sicily?",
+        "Answer": "Sardinia"
+    },
+    {
+        "Question": "The process of sedimentation involves the settling of which particles?",
+        "Answer": "Sand"
+    },
+    {
+        "Question": "The ancient civilization that built the Terracotta Army was which?",
+        "Answer": "The Qin dynasty"
+    },
+    {
+        "Question": "The famous musician Johann Sebastian Bach composed which famous work for solo violin?",
+        "Answer": "Partita No. 3"
+    },
+    {
+        "Question": "The famous composer Ludwig van Beethoven was born in which city?",
+        "Answer": "Bonn, Germany"
+    },
+    {
+        "Question": "The process of a river flowing back into the ocean is known as which phenomenon?",
+        "Answer": "Estuary"
+    },
+    {
+        "Question": "The process of a plant growing in a controlled environment is known as which method?",
+        "Answer": "Hydroponics"
+    },
+    {
+        "Question": "The famous artist Pablo Picasso was born in which city?",
+        "Answer": "M\u00e1laga, Spain"
+    },
+    {
+        "Question": "The largest species of cat is which type of cat?",
+        "Answer": "Siberian tiger"
+    },
+    {
+        "Question": "The process of a star forming from a cloud of gas and dust is known as which phenomenon?",
+        "Answer": "Nebulosity"
+    },
+    {
+        "Question": "The process of a river flowing over a steep slope is known as which phenomenon?",
+        "Answer": "Waterfall"
+    },
+    {
+        "Question": "The famous artist Claude Monet was born in which city?",
+        "Answer": "Paris, France"
+    },
+    {
+        "Question": "The famous composer Pyotr Ilyich Tchaikovsky was born in which city?",
+        "Answer": "Votkinsk, Russia"
+    },
+    {
+        "Question": "The process of a plant growing in a specific direction is known as which phenomenon?",
+        "Answer": "Phototropism"
+    },
+    {
+        "Question": "The famous novel \"The Scarlet Letter\" was written by which American author?",
+        "Answer": "Nathaniel Hawthorne"
+    },
+    {
+        "Question": "The process of a river flowing through a narrow passage is known as which phenomenon?",
+        "Answer": "Gorge"
+    },
+    {
+        "Question": "The famous artist Johannes Vermeer was born in which city?",
+        "Answer": "Delft, Netherlands"
+    },
+    {
+        "Question": "The famous novel by Jane Austen, published in 1813, is a classic romance about a young woman's quest for love and social status in which English town?",
+        "Answer": "Bath"
+    },
+    {
+        "Question": "The process of photosynthesis occurs in the chloroplasts of what type of plant cells?",
+        "Answer": "Leaf cells"
+    },
+    {
+        "Question": "The famous musician Jimi Hendrix played the guitar left-handed, but which way did he tune it?",
+        "Answer": "Right-handed"
+    },
+    {
+        "Question": "The process of water evaporating from the surface of the Earth and rising into the atmosphere is called what?",
+        "Answer": "Evaporation"
+    },
+    {
+        "Question": "The ancient city of Pompeii was destroyed by a volcanic eruption in which year?",
+        "Answer": "79 AD"
+    },
+    {
+        "Question": "The largest mammal on Earth is the blue whale, which can grow up to which length?",
+        "Answer": "100 feet"
+    },
+    {
+        "Question": "The largest planet in our solar system, Jupiter, has a diameter of approximately how many Earth diameters?",
+        "Answer": "11"
+    },
+    {
+        "Question": "The famous scientist who discovered the principle of gravity is?",
+        "Answer": "Sir Isaac Newton"
+    },
+    {
+        "Question": "The process of distillation involves the separation of which mixture based on differences in boiling points?",
+        "Answer": "Liquids"
+    },
+    {
+        "Question": "The first computer mouse was invented by which engineer in 1964?",
+        "Answer": "Douglas Engelbart"
+    },
+    {
+        "Question": "The famous composer Wolfgang Amadeus Mozart was born in which city?",
+        "Answer": "Salzburg, Austria"
+    },
+    {
+        "Question": "The famous explorer Ferdinand Magellan led the first expedition to circumnavigate which ocean?",
+        "Answer": "The Atlantic Ocean"
+    },
+    {
+        "Question": "The process of cells dividing and growing is known as what?",
+        "Answer": "Mitosis"
+    },
+    {
+        "Question": "The process of fermentation involves the conversion of sugars into which type of alcohol?",
+        "Answer": "Ethanol"
+    },
+    {
+        "Question": "The famous novel by Jane Austen, published in 1813, is set in which English town?",
+        "Answer": "Highbury"
+    },
+    {
+        "Question": "The ancient Greek philosopher Socrates is credited with developing which method of questioning?",
+        "Answer": "Socratic method"
+    },
+    {
+        "Question": "The famous musical composition by Wolfgang Amadeus Mozart, composed in 1791, is known as which opera?",
+        "Answer": "The Magic Flute"
+    },
+    {
+        "Question": "The famous scientist who developed the theory of relativity is buried in which Swiss city?",
+        "Answer": "Bern"
+    },
+    {
+        "Question": "The famous painting by Leonardo da Vinci, created in the early 16th century, is a representation of which subject?",
+        "Answer": "The Last Supper"
+    },
+    {
+        "Question": "The famous musician and singer-songwriter Bob Dylan was awarded the Nobel Prize in which field in 2016?",
+        "Answer": "Literature"
+    },
+    {
+        "Question": "The famous musician and singer-songwriter Michael Jackson was known as the \"King of which genre\"?",
+        "Answer": "Pop"
+    },
+    {
+        "Question": "The process of diffusion occurs in which type of environment?",
+        "Answer": "Aqueous"
+    },
+    {
+        "Question": "The famous mathematician and physicist Isaac Newton developed which laws of motion?",
+        "Answer": "Three"
+    },
+    {
+        "Question": "The process of a star running out of fuel and collapsing in on itself is known as which type of event?",
+        "Answer": "Supernova"
+    },
+    {
+        "Question": "The world's highest mountain peak, Mount Everest, is located in which mountain range?",
+        "Answer": "Himalayas"
+    },
+    {
+        "Question": "The famous mathematician and physicist Isaac Newton was born in which English county?",
+        "Answer": "Lincolnshire"
+    },
+    {
+        "Question": "The famous composer Pyotr Ilyich Tchaikovsky was born in which year?",
+        "Answer": "1840"
+    },
+    {
+        "Question": "The famous composer Antonio Vivaldi was born in which year?",
+        "Answer": "1678"
+    },
+    {
+        "Question": "The famous painting 'The Persistence of Memory' was created by which Spanish surrealist artist?",
+        "Answer": "Salvador Dali"
+    },
+    {
+        "Question": "The highest mountain peak in the Caucasus mountain range is located in which country?",
+        "Answer": "Georgia"
+    },
+    {
+        "Question": "The famous composer Johann Sebastian Bach was born in which year?",
+        "Answer": "1685"
+    },
+    {
+        "Question": "The largest planet in our solar system, Jupiter, is known for its distinctive banded appearance, which is caused by clouds of what?",
+        "Answer": "ammonia"
+    },
+    {
+        "Question": "The famous music group The Rolling Stones, formed in 1962, is known for their blues-infused rock music and iconic songs like \"Satisfaction\" and \"Paint it Black\".",
+        "Answer": "Mick Jagger"
+    },
+    {
+        "Question": "The famous music group The Beach Boys, formed in 1961, is known for their harmonious surf rock sound and iconic songs like \"Good Vibrations\" and \"God Only Knows\".",
+        "Answer": "Brian Wilson"
+    },
+    {
+        "Question": "The famous artist Leonardo da Vinci painted the ceiling of the Sistine Chapel in the year?",
+        "Answer": "1508"
+    },
+    {
+        "Question": "The highest bridge in the world, located in China, spans a height of about how many meters?",
+        "Answer": "565 meters"
+    },
+    {
+        "Question": "The process of photosynthesis involves the conversion of carbon dioxide and water into which two substances?",
+        "Answer": "Glucose and oxygen"
+    },
+    {
+        "Question": "The process of erosion is responsible for the formation of which geological feature?",
+        "Answer": "Canyons"
+    },
+    {
+        "Question": "The process of osmosis involves the movement of water molecules from an area of which concentration to an area of lower concentration?",
+        "Answer": "Higher"
+    },
+    {
+        "Question": "The famous prehistoric monument Newgrange is located in which Irish county?",
+        "Answer": "County Meath"
+    },
+    {
+        "Question": "The ancient Greek mythological figure who was known for his incredible speed and agility was?",
+        "Answer": "Hermes"
+    },
+    {
+        "Question": "The famous music group Queen was formed in which year?",
+        "Answer": "1970"
+    },
+    {
+        "Question": "The largest planet in our solar system, Jupiter, has which number of moons?",
+        "Answer": "79"
+    },
+    {
+        "Question": "The ancient Greek mythological figure who was known for his incredible strength and bravery is?",
+        "Answer": "Hercules"
+    },
+    {
+        "Question": "The famous novel by Jane Austen, published in 1813, is a romantic novel that follows the life of which young woman?",
+        "Answer": "Elizabeth Bennet"
+    },
+    {
+        "Question": "The famous explorer Vasco da Gama was the first European to navigate which ocean?",
+        "Answer": "Indian Ocean"
+    },
+    {
+        "Question": "The famous scientist Marie Curie was the first woman to win which prestigious award?",
+        "Answer": "Nobel Prize"
+    },
+    {
+        "Question": "The highest waterfall in the world, located in Venezuela, is called Angel Falls, and it drops from a height of about how many meters?",
+        "Answer": "979 meters"
+    },
+    {
+        "Question": "The first successful human spaceflight was achieved by Soviet cosmonaut Yuri Gagarin on which date in 1961?",
+        "Answer": "April 12"
+    },
+    {
+        "Question": "The famous music group The Rolling Stones consisted of four British musicians: Mick, Keith, Charlie, and which other member?",
+        "Answer": "Brian Jones"
+    },
+    {
+        "Question": "The largest living species of coral is the brain coral, which can grow up to how many feet in diameter?",
+        "Answer": "10"
+    },
+    {
+        "Question": "The largest species of bear, the polar bear, can weigh up to how many tons?",
+        "Answer": "1.5"
+    },
+    {
+        "Question": "The largest planet in our solar system, Jupiter, is a gas giant composed primarily of which elements?",
+        "Answer": "Hydrogen and Helium"
+    },
+    {
+        "Question": "The largest living species of shark, the whale shark, can grow up to which length?",
+        "Answer": "40 feet"
+    },
+    {
+        "Question": "The largest living species of bird, the ostrich, is found in which country?",
+        "Answer": "South Africa"
+    },
+    {
+        "Question": "The process of mitosis occurs in which type of cell division?",
+        "Answer": "Somatic cells"
+    },
+    {
+        "Question": "The process of water cycle involves which three stages: evaporation, condensation, and?",
+        "Answer": "Precipitation"
+    },
+    {
+        "Question": "The famous ancient Chinese dynasty that built the Great Wall was which?",
+        "Answer": "Qin"
+    },
+    {
+        "Question": "The process of osmosis occurs in which type of cell membrane?",
+        "Answer": "Semi-permeable"
+    },
+    {
+        "Question": "The process of fermentation occurs in which type of cell?",
+        "Answer": "Prokaryotic"
+    },
+    {
+        "Question": "The famous explorer Christopher Columbus led the first expedition to which continent?",
+        "Answer": "The Americas"
+    },
+    {
+        "Question": "The famous music group The Rolling Stones released their album \"Exile on Main St.\" in which year?",
+        "Answer": "1972"
+    },
+    {
+        "Question": "The chemical compound with the formula \"CH4\" is?",
+        "Answer": "Methane"
+    },
+    {
+        "Question": "The process by which an organism's genetic information is passed from one generation to the next is known as?",
+        "Answer": "Heredity"
+    },
+    {
+        "Question": "The chemical compound with the formula \"CO2\" is?",
+        "Answer": "Carbon Dioxide"
+    },
+    {
+        "Question": "The process of mitosis occurs in which type of cell?",
+        "Answer": "Somatic cell"
+    },
+    {
+        "Question": "The first successful robotic surgery was performed by which surgeon in 1995?",
+        "Answer": "Jacques Marescaux"
+    },
+    {
+        "Question": "The famous novel by F. Scott Fitzgerald, published in 1925, is a classic tale of which American social class?",
+        "Answer": "The American Dream"
+    },
+    {
+        "Question": "The ancient city of Angkor Wat, built in the 12th century, is a representation of which Hindu deity?",
+        "Answer": "Vishnu"
+    },
+    {
+        "Question": "The highest mountain peak in the continent of Antarctica is located in which region?",
+        "Answer": "Victoria Land"
+    },
+    {
+        "Question": "The famous scientist who developed the theory of gravity is buried in which English city?",
+        "Answer": "Westminster"
+    },
+    {
+        "Question": "The process of sedimentation is used to form which type of rock?",
+        "Answer": "Sedimentary"
+    },
+    {
+        "Question": "The process of fermentation is used to produce which type of beverage?",
+        "Answer": "Beer"
+    },
+    {
+        "Question": "The process of photosynthesis involves the conversion of which gas into glucose and oxygen?",
+        "Answer": "Carbon dioxide"
+    },
+    {
+        "Question": "The first human to walk on the Moon was Neil Armstrong, who landed on the Moon's surface on which date?",
+        "Answer": "July 20, 1969"
+    },
+    {
+        "Question": "The process of osmosis occurs in which part of a cell?",
+        "Answer": "Cell membrane"
+    },
+    {
+        "Question": "The process of photosynthesis requires which type of energy?",
+        "Answer": "Light energy"
+    },
+    {
+        "Question": "The first human to walk on the Moon was Neil Armstrong, who landed on which date in 1969?",
+        "Answer": "July 20"
+    },
+    {
+        "Question": "The process of osmosis occurs when water molecules move through which type of cell membrane?",
+        "Answer": "Semipermeable"
+    },
+    {
+        "Question": "The famous musician Wolfgang Amadeus Mozart composed which symphony that is considered one of his most famous works?",
+        "Answer": "Symphony No. 40"
+    },
+    {
+        "Question": "The famous scientific theory that describes how the universe began is known as what?",
+        "Answer": "The Big Bang Theory"
+    },
+    {
+        "Question": "The highest mountain peak in Europe, located in Russia, is called which mountain?",
+        "Answer": "Elbrus"
+    },
+    {
+        "Question": "The famous artist Vincent van Gogh cut off which ear during a psychotic episode in 1888?",
+        "Answer": "His left ear"
+    },
+    {
+        "Question": "The process of breaking down food into smaller molecules to release energy is called what?",
+        "Answer": "Catabolism"
+    },
+    {
+        "Question": "The process of converting electrical energy into mechanical energy is called what?",
+        "Answer": "Electromagnetism"
+    },
+    {
+        "Question": "The process of mitosis occurs in which part of a cell?",
+        "Answer": "Nucleus"
+    },
+    {
+        "Question": "The process of fermentation occurs in which part of a cell?",
+        "Answer": "Cytoplasm"
+    },
+    {
+        "Question": "The highest mountain peak in North America is located in which mountain range?",
+        "Answer": "The Rocky Mountains"
+    },
+    {
+        "Question": "The process of mitosis results in the production of which type of cell?",
+        "Answer": "Daughter cells"
+    },
+    {
+        "Question": "The ancient civilization that built the Great Pyramid of Giza was which?",
+        "Answer": "The Egyptians"
+    },
+    {
+        "Question": "The ancient city of Ephesus was built by which ancient civilization?",
+        "Answer": "The Greeks"
+    },
+    {
+        "Question": "The process of water flowing over and eroding the Earth's surface is known as what?",
+        "Answer": "Erosion"
+    },
+    {
+        "Question": "The process of a solid changing directly to a gas is known as what?",
+        "Answer": "Sublimation"
+    },
+    {
+        "Question": "The process of a liquid changing directly to a solid is known as what?",
+        "Answer": "Freezing"
+    },
+    {
+        "Question": "The process of diffusion occurs in which type of transport?",
+        "Answer": "Passive"
+    },
+    {
+        "Question": "The largest living species of frog is the what, found in South America?",
+        "Answer": "Goliath frog"
+    },
+    {
+        "Question": "The process of plate tectonics is responsible for the creation of which geological feature?",
+        "Answer": "Mountain ranges"
+    },
+    {
+        "Question": "The ancient city of Machu Picchu, located in modern-day Peru, was built by which civilization?",
+        "Answer": "Incas"
+    },
+    {
+        "Question": "The ancient city of Petra was carved into the sandstone cliffs of which desert?",
+        "Answer": "Arabian Desert"
+    },
+    {
+        "Question": "The ancient Greek philosopher Socrates was put on trial and sentenced to death by which method?",
+        "Answer": "Drinking hemlock"
+    },
+    {
+        "Question": "The largest living species of shark, the whale shark, can grow up to how many feet in length?",
+        "Answer": "40"
+    },
+    {
+        "Question": "The process of meiosis occurs in which type of cell?",
+        "Answer": "Gametes"
+    },
+    {
+        "Question": "The largest living species of turtle, the leatherback sea turtle, can live up to how many years in the wild?",
+        "Answer": "80"
+    },
+    {
+        "Question": "The largest living species of eagle, the Philippine eagle, is found in which country?",
+        "Answer": "Philippines"
+    },
+    {
+        "Question": "The famous city of Venice is built on how many islands in the Adriatic Sea?",
+        "Answer": "118"
+    },
+    {
+        "Question": "The Great Wall of China, built over several centuries, stretches for which distance?",
+        "Answer": "Over 13,000 miles"
+    },
+    {
+        "Question": "The famous explorer Christopher Columbus made which voyage in 1492?",
+        "Answer": "The New World"
+    },
+    {
+        "Question": "The ancient Egyptian goddess associated with magic and fertility was which goddess?",
+        "Answer": "Isis"
+    },
+    {
+        "Question": "The ancient Egyptian god associated with the pharaohs was which deity?",
+        "Answer": "Ra"
+    },
+    {
+        "Question": "The famous artist Vincent van Gogh cut off part of his ear in which year?",
+        "Answer": "1888"
+    },
+    {
+        "Question": "The first computer bug was an actual insect that got stuck in which part of the Harvard Mark II computer?",
+        "Answer": "Relay switch"
+    },
+    {
+        "Question": "The famous scientist, who discovered the principles of buoyancy, was a Greek mathematician and engineer who lived in which city?",
+        "Answer": "Alexandria"
+    },
+    {
+        "Question": "The first permanent human settlement in Antarctica was established in which year at McMurdo Station?",
+        "Answer": "1955"
+    },
+    {
+        "Question": "The famous novel by J.R.R. Tolkien, published in 1954, is a high fantasy novel that explores the history of Middle-earth and is set in which fictional world?",
+        "Answer": "Middle-earth"
+    },
+    {
+        "Question": "The famous physicist, who developed the theory of quantum mechanics, was born in which year in Strasbourg, France?",
+        "Answer": "1901"
+    },
+    {
+        "Question": "The first successful human heart-lung machine was developed by which surgeon in 1953?",
+        "Answer": "John Gibbon"
+    },
+    {
+        "Question": "The famous novel by Jane Austen, published in 1817, is a romantic novel that explores the lives of the Dashwood sisters and is set in which English county?",
+        "Answer": "Devon"
+    },
+    {
+        "Question": "The process of photosynthesis occurs in which part of a plant?",
+        "Answer": "The chloroplast"
+    },
+    {
+        "Question": "The famous scientist, who developed the theory of gravity, was born in which year?",
+        "Answer": "1643"
+    },
+    {
+        "Question": "The world's longest river, the Nile, is approximately how many kilometers long?",
+        "Answer": "6,695 kilometers"
+    },
+    {
+        "Question": "The first successful cloning of a mammal was achieved by which Scottish scientist in 1996?",
+        "Answer": "Ian Wilmut"
+    },
+    {
+        "Question": "The highest mountain peak in North America is located in which mountain range?",
+        "Answer": "Rocky Mountains"
+    },
+    {
+        "Question": "The first successful landing on Mars was achieved by which NASA rover in 2012?",
+        "Answer": "Curiosity"
+    },
+    {
+        "Question": "The famous novel \"The Adventures of Huckleberry Finn\" was written by which American author?",
+        "Answer": "Mark Twain"
+    },
+    {
+        "Question": "The famous novel \"War and Peace\" was written by which Russian author?",
+        "Answer": "Leo Tolstoy"
+    },
+    {
+        "Question": "The process by which the universe became transparent to light, occurring about 380,000 years after the Big Bang, is known as what?",
+        "Answer": "Recombination"
+    },
+    {
+        "Question": "The largest planet in our solar system, Jupiter, has a diameter of approximately how many kilometers?",
+        "Answer": "142,984 km"
+    },
+    {
+        "Question": "The ancient city of Machu Picchu was built by which Inca emperor?",
+        "Answer": "Pachacuti"
+    },
+    {
+        "Question": "The largest living structure on Earth is the Great Barrier Reef, located in which Australian state?",
+        "Answer": "Queensland"
+    },
+    {
+        "Question": "The highest mountain peak in the Antarctic continent is which?",
+        "Answer": "Vinson Massif"
+    },
+    {
+        "Question": "The famous prehistoric monument of the Moai statues is located on which Pacific island?",
+        "Answer": "Easter Island"
+    },
+    {
+        "Question": "The largest planet in our solar system, Jupiter, is a what type of planet?",
+        "Answer": "Gas giant"
+    },
+    {
+        "Question": "The famous artist Claude Monet was a key figure in which art movement?",
+        "Answer": "Impressionism"
+    },
+    {
+        "Question": "The highest mountain peak in the solar system, Olympus Mons on Mars, is a shield volcano with a height of approximately how many kilometers?",
+        "Answer": "27 km"
+    },
+    {
+        "Question": "The largest living species of ant, the Dinoponera gigantea, can grow up to how many centimeters in length?",
+        "Answer": "2.5 cm"
+    },
+    {
+        "Question": "The largest desert in the world, the Antarctic Desert, covers which continent?",
+        "Answer": "Antarctica"
+    },
+    {
+        "Question": "The highest mountain peak in the continent of Antarctica is located in which region?",
+        "Answer": "Queen Maud Land"
+    },
+    {
+        "Question": "The highest mountain peak in the continent of Oceania is located in which country?",
+        "Answer": "Papua New Guinea"
+    },
+    {
+        "Question": "The highest mountain peak in the continent of Africa is located in which mountain range?",
+        "Answer": "Atlas Mountains"
+    },
+    {
+        "Question": "The deepest part of the Grand Canyon, the Inner Gorge, is approximately how many meters deep?",
+        "Answer": "1,857 meters"
+    },
+    {
+        "Question": "The process by which the Earth's atmosphere is affected by the sun's ultraviolet radiation is known as what?",
+        "Answer": "Ozone depletion"
+    },
+    {
+        "Question": "The world's longest river is the Nile River, which flows through which countries?",
+        "Answer": "Egypt and Sudan"
+    },
+    {
+        "Question": "The famous artist Pablo Picasso was born in which country?",
+        "Answer": "Spain"
+    },
+    {
+        "Question": "The process of fermentation is used to make which type of food?",
+        "Answer": "Bread"
+    },
+    {
+        "Question": "The famous explorer Ferdinand Magellan led the first expedition to circumnavigate which ocean?",
+        "Answer": "Pacific"
+    },
+    {
+        "Question": "The largest living structure on Earth, located in the Great Barrier Reef, is what?",
+        "Answer": "The coral reef"
+    },
+    {
+        "Question": "The highest mountain peak in South America, located in Chile, is called what?",
+        "Answer": "Ojos del Salado"
+    },
+    {
+        "Question": "The process of respiration occurs in which part of a cell?",
+        "Answer": "Mitochondria"
+    },
+    {
+        "Question": "The famous scientist and inventor Marie Curie was born in which city?",
+        "Answer": "Warsaw"
+    },
+    {
+        "Question": "The process of decomposition occurs in which part of an ecosystem?",
+        "Answer": "Soil"
+    },
+    {
+        "Question": "The Great Wall of China stretches across which Chinese province?",
+        "Answer": "Hebei"
+    },
+    {
+        "Question": "The famous explorer Ferdinand Magellan led the first expedition to circumnavigate the globe in which year?",
+        "Answer": "1519"
+    },
+    {
+        "Question": "The ancient city of Angkor Wat, located in modern-day Cambodia, was built by which ancient civilization?",
+        "Answer": "Khmer Empire"
+    },
+    {
+        "Question": "The famous scientist Albert Einstein developed the theory of which phenomenon in 1905?",
+        "Answer": "Special relativity"
+    },
+    {
+        "Question": "The famous musical instrument that is played by blowing air through a reed is which?",
+        "Answer": "Saxophone"
+    },
+    {
+        "Question": "The famous American inventor who created the light bulb was which?",
+        "Answer": "Thomas Edison"
+    },
+    {
+        "Question": "The ancient city of Troy, located in modern-day Turkey, was the setting for which epic poem by Homer?",
+        "Answer": "The Iliad"
+    },
+    {
+        "Question": "The world's longest river, the Nile, is approximately how many kilometers long?",
+        "Answer": "6,695"
+    },
+    {
+        "Question": "The famous explorer Christopher Columbus made his first voyage to the Americas in which year?",
+        "Answer": "1492"
+    },
+    {
+        "Question": "The world's longest tunnel, the Gotthard Base Tunnel, is located in which country?",
+        "Answer": "Switzerland"
+    },
+    {
+        "Question": "The process of fermentation occurs in which part of the human body?",
+        "Answer": "Stomach"
+    },
+    {
+        "Question": "The world's longest bridge, the Danyang-Kunshan Grand Bridge, is located in which country?",
+        "Answer": "China"
+    },
+    {
+        "Question": "The famous prehistoric monument, the Megalithic Temples of Ggantija, is located in which country?",
+        "Answer": "Malta"
+    },
+    {
+        "Question": "The world's largest island, Greenland, is located in which ocean?",
+        "Answer": "The Arctic"
+    },
+    {
+        "Question": "The famous music group 'The Beach Boys' was formed in which city in 1961?",
+        "Answer": "Hawthorne"
+    },
+    {
+        "Question": "The ancient Egyptian pyramid of Giza is the only one of the Seven Wonders of the Ancient World still standing, and it is located in which city?",
+        "Answer": "Cairo"
+    },
+    {
+        "Question": "The famous novel by George Orwell, published in 1949, is a dystopian warning about the dangers of which ideology?",
+        "Answer": "Totalitarianism"
+    },
+    {
+        "Question": "The world's longest mountain range, stretching over 7,000 kilometers, is located in which country?",
+        "Answer": "Chile"
+    },
+    {
+        "Question": "The world's largest waterfall, by volume of water, is located on which river?",
+        "Answer": "Congo River"
+    },
+    {
+        "Question": "The ancient city of Petra was carved into the sandstone cliffs of which mountain range?",
+        "Answer": "Edom Mountains"
+    },
+    {
+        "Question": "The world's highest unbroken cliff, Uluru (also known as Ayers Rock), is located in which Australian state?",
+        "Answer": "Northern Territory"
+    },
+    {
+        "Question": "The famous music group The Beatles released their debut album in which year?",
+        "Answer": "1963"
+    },
+    {
+        "Question": "The famous novel by Charles Dickens, published in 1859, is known as which classic?",
+        "Answer": "A Christmas Carol"
+    },
+    {
+        "Question": "The ancient city of Chichen Itza is located in which Mexican state?",
+        "Answer": "Yucatan"
+    },
+    {
+        "Question": "The ancient city of Ephesus is located in which modern-day country?",
+        "Answer": "Turkey"
+    },
+    {
+        "Question": "The ancient city of Persepolis was the capital of which ancient empire?",
+        "Answer": "Achaemenid Empire"
+    },
+    {
+        "Question": "The famous artist Leonardo da Vinci was born in which Italian city?",
+        "Answer": "Vinci"
+    },
+    {
+        "Question": "The chemical element with the symbol \"O\" is?",
+        "Answer": "Oxygen"
+    },
+    {
+        "Question": "The famous musician who wrote the song \"Bohemian Rhapsody\" is which British rock band?",
+        "Answer": "Queen"
+    },
+    {
+        "Question": "The process by which the Sun's energy is transferred to the Earth is known as what?",
+        "Answer": "Insolation"
+    },
+    {
+        "Question": "The chemical element with the symbol \"Na\" is?",
+        "Answer": "Sodium"
+    },
+    {
+        "Question": "The process by which the Earth's oceans circulate and move is known as what?",
+        "Answer": "Ocean Currents"
+    },
+    {
+        "Question": "The famous musician who wrote the song \"Stairway to Heaven\" is which British rock band?",
+        "Answer": "Led Zeppelin"
+    },
+    {
+        "Question": "The process by which the Earth's climate is affected by human activities is known as what?",
+        "Answer": "Climate Change"
+    },
+    {
+        "Question": "The famous musician who wrote the song \"Hotel California\" is which American rock band?",
+        "Answer": "The Eagles"
+    },
+    {
+        "Question": "The process by which the Earth's oceans are affected by human activities is known as what?",
+        "Answer": "Ocean Pollution"
+    },
+    {
+        "Question": "The famous scientist who developed the theory of electromagnetism is which English physicist?",
+        "Answer": "Michael Faraday"
+    },
+    {
+        "Question": "The process by which the Earth's climate is affected by volcanic eruptions is known as what?",
+        "Answer": "Volcanic Winter"
+    },
+    {
+        "Question": "The famous musician who wrote the song \"Smells Like Teen Spirit\" is which American rock band?",
+        "Answer": "Nirvana"
+    },
+    {
+        "Question": "The process of fermentation occurs in which part of a plant?",
+        "Answer": "Roots"
+    },
+    {
+        "Question": "The world's driest desert, covering most of Chile, is called what?",
+        "Answer": "Atacama Desert"
+    },
+    {
+        "Question": "The ancient city of Petra was carved into the sandstone cliffs of which mountain range in Jordan?",
+        "Answer": "The Al-Siq"
+    },
+    {
+        "Question": "The world's largest living organism, a fungus that covers over 2,200 acres, is located in which state in the US?",
+        "Answer": "Oregon"
+    },
+    {
+        "Question": "The famous prehistoric monument Stonehenge is aligned with which celestial event?",
+        "Answer": "The Summer Solstice"
+    },
+    {
+        "Question": "The world's driest desert, covering most of Chile, is located in which region?",
+        "Answer": "The Atacama Region"
+    },
+    {
+        "Question": "The famous physicist Stephen Hawking made groundbreaking contributions to which field of physics?",
+        "Answer": "Cosmology"
+    },
+    {
+        "Question": "The ancient city of Petra, carved into the sandstone cliffs of Jordan, was a major center of trade and commerce in which ancient civilization?",
+        "Answer": "Nabataean"
+    },
+    {
+        "Question": "The famous physicist who developed the theory of relativity, which revolutionized our understanding of space and time, was Albert which?",
+        "Answer": "Einstein"
+    },
+    {
+        "Question": "The highest mountain peak in the solar system, Olympus Mons on Mars, is a shield volcano that stands at a height of over which kilometers?",
+        "Answer": "27"
+    },
+    {
+        "Question": "The largest mammal on Earth, the blue whale, can grow up to how many meters in length?",
+        "Answer": "30"
+    },
+    {
+        "Question": "The largest living species of shark, the whale shark, can grow up to how many meters in length?",
+        "Answer": "20"
+    },
+    {
+        "Question": "The largest desert in the world, covering over 9,000,000 square kilometers, is located in which continent?",
+        "Answer": "Asia"
+    },
+    {
+        "Question": "The Great Barrier Reef, located off the coast of Australia, is the world's largest what?",
+        "Answer": "Coral reef"
+    },
+    {
+        "Question": "The famous author Jane Austen wrote the novel \"Pride and Prejudice\" in which year?",
+        "Answer": "1813"
+    },
+    {
+        "Question": "The famous author J.K. Rowling wrote the first book in the Harry Potter series in which year?",
+        "Answer": "1997"
+    },
+    {
+        "Question": "The famous artist Michelangelo created the statue of which biblical figure?",
+        "Answer": "David"
+    },
+    {
+        "Question": "The process of fossilization occurs over which period of time?",
+        "Answer": "Millions of years"
+    },
+    {
+        "Question": "The process of cellular respiration occurs in which stage of a cell's life cycle?",
+        "Answer": "Cytokinesis"
+    },
+    {
+        "Question": "The process of plate tectonics involves the movement of which large sections of the Earth's crust?",
+        "Answer": "Plates"
+    },
+    {
+        "Question": "The highest mountain peak in the world, Mount Everest, is located on the border between which two countries?",
+        "Answer": "Nepal and China"
+    },
+    {
+        "Question": "The famous explorer who led the first expedition to reach the summit of Mount Everest was Tenzing _______.",
+        "Answer": "Norgay"
+    },
+    {
+        "Question": "The famous scientist who developed the theory of evolution through natural selection was Charles _______.",
+        "Answer": "Darwin"
+    },
+    {
+        "Question": "The famous explorer Vasco da Gama sailed around which cape in 1497?",
+        "Answer": "Cape of Good Hope"
+    },
+    {
+        "Question": "The ancient civilization of the Egyptians built the Great Pyramid of Giza at which location in modern-day Egypt?",
+        "Answer": "Giza"
+    },
+    {
+        "Question": "The largest island in the Mediterranean Sea is which island in Greece?",
+        "Answer": "Crete"
+    },
+    {
+        "Question": "The process of electrolysis involves the use of which type of energy to split a chemical compound?",
+        "Answer": "Electrical energy"
+    },
+    {
+        "Question": "The ancient city of Machu Picchu was built by which pre-Columbian civilization in Peru?",
+        "Answer": "The Incas"
+    },
+    {
+        "Question": "The famous mathematician and physicist Isaac Newton developed the laws of which motion in the 17th century?",
+        "Answer": "Universal"
+    },
+    {
+        "Question": "The highest mountain peak in the Rocky Mountains is located in which state?",
+        "Answer": "Colorado"
+    },
+    {
+        "Question": "The famous scientist, who developed the theory of relativity, was born in which year?",
+        "Answer": "1879"
+    },
+    {
+        "Question": "The ancient city of Angkor Wat, located in Cambodia, was built in which century?",
+        "Answer": "12th"
+    },
+    {
+        "Question": "The famous prehistoric monument Stonehenge is aligned with which celestial body?",
+        "Answer": "Solstice sunrise"
+    },
+    {
+        "Question": "The process of mitosis is a type of which biological process?",
+        "Answer": "Cell division"
+    },
+    {
+        "Question": "The largest living species of lizard, the Komodo dragon, is found in which Indonesian island?",
+        "Answer": "Komodo Island"
+    },
+    {
+        "Question": "The largest planet in our solar system, Jupiter, has a diameter of approximately how many kilometers?",
+        "Answer": "142,984 kilometers"
+    },
+    {
+        "Question": "The famous scientist and philosopher Albert Einstein was born in which city in 1879?",
+        "Answer": "Ulm"
+    },
+    {
+        "Question": "The famous explorer Vasco da Gama was the first European to navigate a route from Europe to which Asian country?",
+        "Answer": "India"
+    },
+    {
+        "Question": "The famous artist Vincent van Gogh cut off part of his ear during a psychotic episode in which city?",
+        "Answer": "Arles"
+    },
+    {
+        "Question": "The process of sedimentation involves the settling of which particles in a fluid?",
+        "Answer": "Solid"
+    },
+    {
+        "Question": "The Treaty of Westphalia, signed in 1648, officially ended which war?",
+        "Answer": "Thirty Years' War"
+    },
+    {
+        "Question": "The famous scientist and inventor Galileo Galilei was born in which city?",
+        "Answer": "Pisa"
+    },
+    {
+        "Question": "The ancient Greek philosopher Socrates was put on trial and executed in which city-state?",
+        "Answer": "Athens"
+    },
+    {
+        "Question": "The famous painting \"The Mona Lisa\" is housed in which museum in Paris?",
+        "Answer": "Louvre Museum"
+    },
+    {
+        "Question": "The first permanent English settlement in North America was established at which location in 1607?",
+        "Answer": "Jamestown, Virginia"
+    },
+    {
+        "Question": "The ancient civilization of the Inca built their capital city at which location in modern-day Peru?",
+        "Answer": "Cuzco"
+    },
+    {
+        "Question": "The process of fermentation involves the breakdown of which substance by microorganisms?",
+        "Answer": "Sugar"
+    },
+    {
+        "Question": "The largest desert in the world by area is the what, covering much of Australia?",
+        "Answer": "Simpson Desert"
+    },
+    {
+        "Question": "The process of mitosis occurs in which type of cell?",
+        "Answer": "Eukaryotic cell"
+    },
+    {
+        "Question": "The process of meiosis occurs in which type of cell?",
+        "Answer": "Gamete cell"
+    },
+    {
+        "Question": "The largest bird of prey in the world is the what, found in Africa and Asia?",
+        "Answer": "Golden eagle"
+    },
+    {
+        "Question": "The process of diffusion involves the movement of which substance from an area of high concentration to an area of low concentration?",
+        "Answer": "Molecules"
+    },
+    {
+        "Question": "The process of distillation involves the separation of which substance from a mixture using heat?",
+        "Answer": "Liquid"
+    },
+    {
+        "Question": "The famous explorer James Cook led the first expedition to which island group in the Pacific?",
+        "Answer": "Hawaii"
+    },
+    {
+        "Question": "The chemical symbol for lead is which one-letter symbol?",
+        "Answer": "Pb"
+    },
+    {
+        "Question": "The world's largest desert, covering over 9,000,000 square kilometers, is which?",
+        "Answer": "The Sahara"
+    },
+    {
+        "Question": "The world's longest river, stretching over 6,695 kilometers, is which?",
+        "Answer": "The Nile"
+    },
+    {
+        "Question": "The famous musical composition by Pyotr Ilyich Tchaikovsky, composed in 1877, is known as which ballet?",
+        "Answer": "Swan Lake"
+    },
+    {
+        "Question": "The chemical symbol for zinc is which one-letter symbol?",
+        "Answer": "Zn"
+    },
+    {
+        "Question": "The world's largest waterfall, by volume of water, is which?",
+        "Answer": "Inga Falls"
+    },
+    {
+        "Question": "The famous novel by Gustave Flaubert, published in 1857, is known as which classic?",
+        "Answer": "Madame Bovary"
+    },
+    {
+        "Question": "The famous novel by Virginia Woolf, published in 1925, is known as which classic?",
+        "Answer": "Mrs. Dalloway"
+    },
+    {
+        "Question": "The world's driest desert, covering over 100,000 square miles, is the what?",
+        "Answer": "The Atacama Desert"
+    },
+    {
+        "Question": "The world's longest mountain range, stretching over 4,300 miles, is the what?",
+        "Answer": "The Andes"
+    },
+    {
+        "Question": "The first manned mission to land on the moon was Apollo 11, which was launched in which year?",
+        "Answer": "1969"
+    },
+    {
+        "Question": "The world's longest river, stretching over 6,600 kilometers, is the what?",
+        "Answer": "The Nile River"
+    },
+    {
+        "Question": "The process of rock breaking down into smaller pieces is known as what?",
+        "Answer": "Weathering"
+    },
+    {
+        "Question": "The ancient city of Petra, located in modern-day Jordan, was carved into which rock?",
+        "Answer": "Sandstone"
+    },
+    {
+        "Question": "The Great Barrier Reef, located off the coast of Australia, is the world's largest coral reef system and is home to which type of marine life?",
+        "Answer": "Fish"
+    },
+    {
+        "Question": "The famous explorer Ferdinand Magellan led the first expedition to circumnavigate the globe in the early 16th century.",
+        "Answer": "Magellan"
+    },
+    {
+        "Question": "The Great Barrier Reef, located in the Coral Sea, is the world's largest coral reef system and is home to which type of marine life?",
+        "Answer": "Coral and fish"
+    },
+    {
+        "Question": "The ancient city of Petra, carved into the sandstone cliffs of Jordan, was the capital of which ancient civilization?",
+        "Answer": "Nabataeans"
+    },
+    {
+        "Question": "The largest living species of lizard, the Komodo dragon, is found in which island chain in Indonesia?",
+        "Answer": "Komodo Islands"
+    },
+    {
+        "Question": "The ancient city of Angkor Wat, located in modern-day Cambodia, was built in the 12th century by which king?",
+        "Answer": "Suryavarman II"
+    },
+    {
+        "Question": "The ancient city of Pompeii, frozen in time by the eruption of Mount Vesuvius, was located in which region of Italy?",
+        "Answer": "Campania"
+    },
+    {
+        "Question": "The process of electrolysis involves the use of which type of energy?",
+        "Answer": "Electrical"
+    },
+    {
+        "Question": "The ancient Egyptian pharaoh who built the Great Sphinx of Giza is believed to have been which pharaoh?",
+        "Answer": "Khafre"
+    },
+    {
+        "Question": "The process of mitosis occurs in which stage of a cell's life cycle?",
+        "Answer": "Interphase"
+    },
+    {
+        "Question": "The ancient city of Angkor Wat, located in modern-day Cambodia, was built by which ancient civilization?",
+        "Answer": "The Khmer Empire"
+    },
+    {
+        "Question": "The world's largest waterfall, by volume of water, is located on which border?",
+        "Answer": "Zambia/Zimbabwe"
+    },
+    {
+        "Question": "The largest planet in our solar system, known for its distinctive ring system, is also the sixth planet from the Sun.",
+        "Answer": "Saturn"
+    },
+    {
+        "Question": "The famous musical composition by Ludwig van Beethoven, composed in 1804-1807, is known as which symphony?",
+        "Answer": "Symphony No. 5"
+    },
+    {
+        "Question": "The famous painting by Johannes Vermeer, created in the 17th century, depicts a young woman pouring milk from a jug.",
+        "Answer": "The Milkmaid"
+    },
+    {
+        "Question": "The process of sedimentation involves the settling of which particles at the bottom of a liquid?",
+        "Answer": "Solid particles"
+    },
+    {
+        "Question": "The famous scientist who discovered the structure of DNA and is known for his work on the double helix model is which British scientist?",
+        "Answer": "James Watson"
+    },
+    {
+        "Question": "The famous artist Pablo Picasso was born in which city in 1881?",
+        "Answer": "M\u00e1laga"
+    },
+    {
+        "Question": "The largest living structure on Earth, the Great Barrier Reef, is located in which ocean?",
+        "Answer": "The Coral Sea"
+    },
+    {
+        "Question": "The process of meiosis is a type of which cell division?",
+        "Answer": "Sexual"
+    },
+    {
+        "Question": "The largest city in Brazil by population is which city?",
+        "Answer": "S\u00e3o Paulo"
+    },
+    {
+        "Question": "The largest living species of snake, found in the tropical regions of Asia and Africa, is the what?",
+        "Answer": "Reticulated Python"
+    },
+    {
+        "Question": "The famous novel by George Orwell, published in 1949, is set in which dystopian society?",
+        "Answer": "Oceania"
+    },
+    {
+        "Question": "The famous novel by Jane Austen, published in 1813, is set in the fictional county of which English region?",
+        "Answer": "Hertfordshire"
+    },
+    {
+        "Question": "The famous painting by Leonardo da Vinci, created in the early 16th century, depicts which subject?",
+        "Answer": "The Mona Lisa"
+    },
+    {
+        "Question": "The famous musical composition by Wolfgang Amadeus Mozart, composed in 1787, is known as which opera?",
+        "Answer": "Don Giovanni"
+    },
+    {
+        "Question": "The ancient Greek philosopher Socrates is credited with which method of questioning?",
+        "Answer": "The Socratic method"
+    },
+    {
+        "Question": "The famous painting by Claude Monet, created in the late 19th century, depicts which scene?",
+        "Answer": "Impression, Sunrise"
+    },
+    {
+        "Question": "The famous mathematical constant e is approximately equal to which decimal value?",
+        "Answer": "2.71828"
+    },
+    {
+        "Question": "The famous musician and singer-songwriter Elton John was born in which year?",
+        "Answer": "1947"
+    },
+    {
+        "Question": "The ancient city of Pompeii, destroyed by the eruption of Mount Vesuvius in 79 AD, is now a popular tourist destination in Italy.",
+        "Answer": "Pompeii"
+    },
+    {
+        "Question": "The ancient city of Machu Picchu, located in modern-day Peru, was built by the Inca civilization in the 15th century.",
+        "Answer": "Machu Picchu"
+    },
+    {
+        "Question": "The famous physicist Albert Einstein developed the theory of which phenomenon in 1905?",
+        "Answer": "Special Relativity"
+    },
+    {
+        "Question": "The famous painting by Leonardo da Vinci, created in the early 16th century, is a masterpiece of the Renaissance art movement.",
+        "Answer": "Mona Lisa"
+    },
+    {
+        "Question": "The famous novel by Jane Austen, published in 1813, is a classic romance about a young woman's search for love and social status.",
+        "Answer": "Pride and Prejudice"
+    },
+    {
+        "Question": "The famous composer Wolfgang Amadeus Mozart, born in 1756, was a child prodigy and one of the most influential musicians of all time.",
+        "Answer": "Classical music"
+    },
+    {
+        "Question": "The famous painting by Vincent van Gogh, created in 1889, is a representation of the artist's struggles with mental illness.",
+        "Answer": "Starry Night"
+    },
+    {
+        "Question": "The process of sedimentation involves the settling of what particles?",
+        "Answer": "Sediment"
+    },
+    {
+        "Question": "The chemical formula for water is what?",
+        "Answer": "H2O"
+    },
+    {
+        "Question": "The process of mitosis occurs in which type of cell division?",
+        "Answer": "Eukaryotic"
+    },
+    {
+        "Question": "The process of respiration occurs in which part of the human body?",
+        "Answer": "Lungs"
+    },
+    {
+        "Question": "The famous prehistoric monument of the Pyramids of Giza is located in which country?",
+        "Answer": "Egypt"
+    },
+    {
+        "Question": "The process of meiosis occurs in which type of cell division?",
+        "Answer": "Sex cells"
+    },
+    {
+        "Question": "The process of electrolysis involves the use of what to split a chemical compound?",
+        "Answer": "Electricity"
+    },
+    {
+        "Question": "The process of fermentation occurs in which type of environment?",
+        "Answer": "Anaerobic"
+    },
+    {
+        "Question": "The process of osmosis involves the movement of what through a semipermeable membrane?",
+        "Answer": "Water molecules"
+    },
+    {
+        "Question": "The largest living species of tree, found in Madagascar, is called what?",
+        "Answer": "Baobab"
+    },
+    {
+        "Question": "The process of photosynthesis occurs in which part of a plant cell?",
+        "Answer": "Chloroplast"
+    },
+    {
+        "Question": "The process of mitosis is a type of which cell division?",
+        "Answer": "Asexual"
+    },
+    {
+        "Question": "The famous musician and composer Ludwig van Beethoven was born in which year?",
+        "Answer": "1770"
+    },
+    {
+        "Question": "The process of fermentation involves the action of which type of microorganism?",
+        "Answer": "Yeast"
+    },
+    {
+        "Question": "The famous painting by Vincent van Gogh, created in 1888, depicts the view from the east-facing window of his asylum room.",
+        "Answer": "The Starry Night"
+    },
+    {
+        "Question": "The famous novel by George Orwell, published in 1949, depicts a dystopian future where the totalitarian government exercises total control over its citizens.",
+        "Answer": "1984"
+    },
+    {
+        "Question": "The famous ancient city, located in modern-day Jordan, was the capital of the Nabataean Kingdom.",
+        "Answer": "Petra"
+    },
+    {
+        "Question": "The famous novel by F. Scott Fitzgerald, published in 1925, is a classic tale of the American Dream and its disillusionment.",
+        "Answer": "The Great Gatsby"
+    },
+    {
+        "Question": "The largest mammal on Earth, the blue whale, can grow up to 33 meters in length and weigh over 180 metric tons.",
+        "Answer": "Blue Whale"
+    },
+    {
+        "Question": "The famous music group The Rolling Stones was formed in which year?",
+        "Answer": "1962"
+    },
+    {
+        "Question": "The famous prehistoric monument Carnac stones is located in which French region?",
+        "Answer": "Brittany"
+    },
+    {
+        "Question": "The chemical element with the symbol \"Pb\" is?",
+        "Answer": "Lead"
+    },
+    {
+        "Question": "The largest island in the South China Sea is?",
+        "Answer": "Taiwan"
+    },
+    {
+        "Question": "The largest city in the Middle East is?",
+        "Answer": "Istanbul"
+    },
+    {
+        "Question": "The largest river in Africa is?",
+        "Answer": "Nile River"
+    },
+    {
+        "Question": "The chemical element with the symbol \"Sn\" is?",
+        "Answer": "Tin"
+    },
+    {
+        "Question": "The famous music group that released the album \"Thriller\" was?",
+        "Answer": "Michael Jackson"
+    },
+    {
+        "Question": "The chemical element with the symbol \"Fe\" is?",
+        "Answer": "Iron"
+    },
+    {
+        "Question": "The largest city in Southeast Asia is?",
+        "Answer": "Jakarta"
+    },
+    {
+        "Question": "The highest mountain peak in the Rocky Mountains is?",
+        "Answer": "Mount Elbert"
+    },
+    {
+        "Question": "The famous music group The Beatles consisted of four British musicians: John, Paul, George, and which other member?",
+        "Answer": "Ringo Starr"
+    },
+    {
+        "Question": "The famous scientist Marie Curie discovered which element?",
+        "Answer": "Polonium"
+    },
+    {
+        "Question": "The famous city of Venice is built on more than 100 small islands in which Italian region?",
+        "Answer": "Veneto"
+    },
+    {
+        "Question": "The chemical element with the symbol \"Au\" is?",
+        "Answer": "Gold"
+    },
+    {
+        "Question": "The ancient city of Angkor Wat was built by which pre-Columbian civilization?",
+        "Answer": "Khmer"
+    },
+    {
+        "Question": "The ancient city of Troy was said to be located in which region of Turkey?",
+        "Answer": "Northwest Anatolia"
+    },
+    {
+        "Question": "The highest waterfall in the world, located in South America, is called which?",
+        "Answer": "Iguazu Falls"
+    },
+    {
+        "Question": "The ancient city of Persepolis was built by which ancient civilization?",
+        "Answer": "Achaemenid"
+    },
+    {
+        "Question": "The chemical element with the symbol \"Hg\" is?",
+        "Answer": "Mercury"
+    },
+    {
+        "Question": "The famous music group that released the album \"Sgt. Pepper's Lonely Hearts Club Band\" in 1967 was which British rock band?",
+        "Answer": "The Beatles"
+    },
+    {
+        "Question": "The first woman to fly solo across the Atlantic Ocean was which American aviator in 1932?",
+        "Answer": "Amelia Earhart"
+    },
+    {
+        "Question": "The process of electrolysis involves the decomposition of water into which two elements?",
+        "Answer": "Hydrogen and Oxygen"
+    },
+    {
+        "Question": "The process of fermentation involves the conversion of which type of sugar into alcohol?",
+        "Answer": "Glucose"
+    },
+    {
+        "Question": "The largest living species of bear, the polar bear, is found in which habitat?",
+        "Answer": "Arctic"
+    },
+    {
+        "Question": "The world's longest mountain range, stretching over 7,000 kilometers, is located in which continent?",
+        "Answer": "South America"
+    },
+    {
+        "Question": "The largest living species of cat, known for its powerful roar and solitary behavior, is which?",
+        "Answer": "Lion"
+    },
+    {
+        "Question": "The first mobile phone call was made by which engineer in 1973?",
+        "Answer": "Martin Cooper"
+    },
+    {
+        "Question": "The famous explorer Ferdinand Magellan led the first expedition to circumnavigate which planet in 1519?",
+        "Answer": "Earth"
+    },
+    {
+        "Question": "The first successful human kidney transplant was performed by which surgeon in 1954?",
+        "Answer": "Joseph Murray"
+    },
+    {
+        "Question": "The first permanent Spanish settlement in North America was established in which year?",
+        "Answer": "1565"
+    },
+    {
+        "Question": "The highest mountain peak in the solar system, located on Mars, is named after which Greek god?",
+        "Answer": "Olympus Mons"
+    },
+    {
+        "Question": "The ancient city of Petra was carved into the sandstone cliffs of which mountain range?",
+        "Answer": "The Edom Mountains"
+    },
+    {
+        "Question": "The world's largest rainforest, covering over 5,500,000 square kilometers, is the what?",
+        "Answer": "Amazon Rainforest"
+    },
+    {
+        "Question": "The world's longest river, by discharge volume, is the what?",
+        "Answer": "Amazon River"
+    },
+    {
+        "Question": "The famous scientist Charles Darwin developed the theory of which natural process?",
+        "Answer": "Evolution"
+    },
+    {
+        "Question": "The ancient city of Petra, located in modern-day Jordan, was an important center of trade for which civilization?",
+        "Answer": "The Nabataeans"
+    },
+    {
+        "Question": "The famous painting by Leonardo da Vinci, created in the early 16th century, is known for its enigmatic smile and is housed in which museum?",
+        "Answer": "The Uffizi Gallery"
+    },
+    {
+        "Question": "The largest living species of shark, found in warm and tropical waters, is which shark?",
+        "Answer": "The whale shark"
+    },
+    {
+        "Question": "The famous American president who issued the Emancipation Proclamation in 1863 was which president?",
+        "Answer": "Abraham Lincoln"
+    },
+    {
+        "Question": "The famous novel by Jane Austen, published in 1813, is set in which English county?",
+        "Answer": "Hampshire"
+    },
+    {
+        "Question": "The largest planet in our solar system is Jupiter.",
+        "Answer": "True"
+    },
+    {
+        "Question": "The famous ancient Greek philosopher who taught that \"know thyself\" was which?",
+        "Answer": "Socrates"
+    },
+    {
+        "Question": "The first successful flight of a powered, heavier-than-air aircraft was made by which British engineer in 1903?",
+        "Answer": "Orville Wright"
+    },
+    {
+        "Question": "The famous explorer who led the first expedition to reach the summit of Mount Everest was which British mountaineer in 1953?",
+        "Answer": "Sir Edmund Hillary"
+    },
+    {
+        "Question": "The famous artist Pablo Picasso was a pioneer of which art movement?",
+        "Answer": "Cubism"
+    },
+    {
+        "Question": "The process of fossilization involves the transformation of which organic material into stone?",
+        "Answer": "Bones"
+    },
+    {
+        "Question": "The highest waterfall in the world, located in Venezuela, is known as what?",
+        "Answer": "Angel Falls"
+    },
+    {
+        "Question": "The process by which the Earth's plates move and change, resulting in earthquakes and volcanic eruptions, is known as what?",
+        "Answer": "Plate Tectonics"
+    },
+    {
+        "Question": "The ancient civilization that built the Great Pyramid of Giza is which?",
+        "Answer": "Egyptians"
+    },
+    {
+        "Question": "The ancient city of Machu Picchu was built by which South American civilization in the 15th century?",
+        "Answer": "Inca"
+    },
+    {
+        "Question": "The largest living species of penguin is the?",
+        "Answer": "Emperor Penguin"
+    },
+    {
+        "Question": "The process of electrolysis involves the use of which type of current?",
+        "Answer": "Direct current"
+    },
+    {
+        "Question": "The famous painting \"The Mona Lisa\" is a portrait of which historical figure?",
+        "Answer": "Lisa del Giocondo"
+    },
+    {
+        "Question": "The first president of the United States, serving from 1789 to 1797, was George _______?",
+        "Answer": "Washington"
+    },
+    {
+        "Question": "The famous explorer who led the first expedition to reach the South Pole was Roald _______?",
+        "Answer": "Amundsen"
+    },
+    {
+        "Question": "The famous prehistoric monument located in Wiltshire, England, is believed to have been built around which time period?",
+        "Answer": "3000 BC"
+    },
+    {
+        "Question": "The ancient Egyptian pharaoh who built the Great Pyramid of Giza is believed to have been which pharaoh?",
+        "Answer": "Khufu"
+    },
+    {
+        "Question": "The famous mathematician and physicist Archimedes discovered the principle of which phenomenon?",
+        "Answer": "Buoyancy"
+    },
+    {
+        "Question": "The highest mountain peak in Africa, located in Tanzania, is called what?",
+        "Answer": "Mount Kilimanjaro"
+    },
+    {
+        "Question": "The famous artist Leonardo da Vinci painted the famous mural \"The Last Supper\" in which city?",
+        "Answer": "Milan"
+    },
+    {
+        "Question": "The largest living species of lizard, known for its massive size and powerful tail, is which?",
+        "Answer": "Komodo Dragon"
+    },
+    {
+        "Question": "The famous physicist Marie Curie discovered the elements of which group?",
+        "Answer": "Actinides"
+    },
+    {
+        "Question": "The famous mathematician and physicist Euclid wrote the book \"The Elements\" on which subject?",
+        "Answer": "Geometry"
+    },
+    {
+        "Question": "The highest mountain peak in Asia, located in Nepal, is called what?",
+        "Answer": "Mount Everest"
+    },
+    {
+        "Question": "The famous artist Michelangelo painted the famous ceiling of which building in Rome?",
+        "Answer": "Sistine Chapel"
+    },
+    {
+        "Question": "The famous physicist who developed the theory of quantum mechanics is which Austrian-born scientist?",
+        "Answer": "Erwin Schr\u00f6dinger"
+    },
+    {
+        "Question": "The famous musician who wrote the song \"Imagine\" is which British singer-songwriter?",
+        "Answer": "John Lennon"
+    },
+    {
+        "Question": "The process of osmosis occurs in which type of cells?",
+        "Answer": "Plant cells"
+    },
+    {
+        "Question": "The first human heart was successfully transplanted in which year?",
+        "Answer": "1967"
+    },
+    {
+        "Question": "The first human to walk on the moon was an American astronaut named Neil _______?",
+        "Answer": "Armstrong"
+    },
+    {
+        "Question": "The famous musician and singer-songwriter Elvis Presley was known as the \"King of _______\"?",
+        "Answer": "Rock and Roll"
+    },
+    {
+        "Question": "The largest mammal on Earth, the blue whale, can grow up to how many meters in length?",
+        "Answer": "33 meters"
+    },
+    {
+        "Question": "The largest living species of shark, the whale shark, can grow up to how many meters in length?",
+        "Answer": "20 meters"
+    },
+    {
+        "Question": "[question]",
+        "Answer": "[answer]"
+    },
+    {
+        "Question": "[question]",
+        "Answer": "[answer]\" "
+    },
+    {
+        "Question": "The process by which water moves through a plant, from the roots to the leaves, is called?",
+        "Answer": "Transpiration"
+    },
+    {
+        "Question": "The chemical symbol for copper is?",
+        "Answer": "Cu"
+    },
+    {
+        "Question": "The largest city in the world by population is?",
+        "Answer": "Tokyo"
+    },
+    {
+        "Question": "The process by which the Earth's plates move is called?",
+        "Answer": "Plate tectonics"
+    },
+    {
+        "Question": "The process by which the Earth's atmosphere protects the planet from harmful radiation is called?",
+        "Answer": "Ozone layer"
+    },
+    {
+        "Question": "The famous scientist who developed the theory of electromagnetism is?",
+        "Answer": "James Clerk Maxwell"
+    },
+    {
+        "Question": "The chemical symbol for mercury is?",
+        "Answer": "Hg"
+    },
+    {
+        "Question": "The largest city in the United States by population is?",
+        "Answer": "New York City"
+    },
+    {
+        "Question": "The famous scientist who developed the theory of black holes is?",
+        "Answer": "Stephen Hawking"
+    },
+    {
+        "Question": "The chemical element with the symbol \"Cu\" is?",
+        "Answer": "Copper"
+    },
+    {
+        "Question": "The famous painting \"Guernica\" is the work of which Spanish artist?",
+        "Answer": "Pablo Picasso"
+    },
+    {
+        "Question": "The famous prehistoric monument, located in Wiltshire, England, is which?",
+        "Answer": "Stonehenge"
+    },
+    {
+        "Question": "The world's longest river, stretching over 6,695 kilometers, is which?",
+        "Answer": "Nile"
+    },
+    {
+        "Question": "The largest mammal on Earth, known for its massive size and gentle nature, is which?",
+        "Answer": "Blue whale"
+    },
+    {
+        "Question": "The famous prehistoric monument, located in Scotland, is which?",
+        "Answer": "Skara Brae"
+    },
+    {
+        "Question": "The highest mountain peak in the continent of Europe is located in which country?",
+        "Answer": "Russia"
+    },
+    {
+        "Question": "The world's longest mountain range, stretching over 7,000 kilometers, is which?",
+        "Answer": "Andes"
+    },
+    {
+        "Question": "The highest mountain peak in the continent of Africa is located in which country?",
+        "Answer": "Ethiopia"
+    },
+    {
+        "Question": "The largest living species of bird, known for its massive size and distinctive call, is which?",
+        "Answer": "Ostrich"
+    },
+    {
+        "Question": "The highest mountain peak in the continent of North America is located in which country?",
+        "Answer": "Canada"
+    },
+    {
+        "Question": "The famous scientist Charles Darwin is credited with developing which theory of evolution?",
+        "Answer": "Natural Selection"
+    },
+    {
+        "Question": "The highest mountain peak in the continental United States, Denali, is located in which state?",
+        "Answer": "Alaska"
+    },
+    {
+        "Question": "The famous novel \"The Hitchhiker's Guide to the Galaxy\" was written by which British author?",
+        "Answer": "Douglas Adams"
+    },
+    {
+        "Question": "The first manned mission to land on the Moon was Apollo 11, which was launched by which space agency?",
+        "Answer": "NASA"
+    },
+    {
+        "Question": "The chemical symbol for silver is which one-letter symbol?",
+        "Answer": "Ag"
+    },
+    {
+        "Question": "The chemical element with the symbol \"Ag\" is?",
+        "Answer": "Silver"
+    },
+    {
+        "Question": "The chemical element with the symbol \"C\" is?",
+        "Answer": "Carbon"
+    },
+    {
+        "Question": "The process of photosynthesis occurs in which type of cells?",
+        "Answer": "Chloroplasts"
+    },
+    {
+        "Question": "The largest mammal on Earth is the blue whale, which can grow up to how many meters in length?",
+        "Answer": "33"
+    },
+    {
+        "Question": "The process of fermentation occurs in which type of cells?",
+        "Answer": "Yeast cells"
+    },
+    {
+        "Question": "The largest living species of lizard is the Komodo dragon, which can grow up to how many meters in length?",
+        "Answer": "3"
+    },
+    {
+        "Question": "The famous mathematician and physicist Isaac Newton developed the laws of which phenomenon?",
+        "Answer": "Motion"
+    },
+    {
+        "Question": "The largest city in Scandinavia is which city, located in Sweden?",
+        "Answer": "Stockholm"
+    },
+    {
+        "Question": "The famous artist who painted the ceiling of the Sistine Chapel is?",
+        "Answer": "Michelangelo"
+    },
+    {
+        "Question": "The largest living species of shark is the?",
+        "Answer": "Whale shark"
+    },
+    {
+        "Question": "The largest desert in the world, by area, is the?",
+        "Answer": "Antarctic Desert"
+    },
+    {
+        "Question": "The largest living species of squid is the?",
+        "Answer": "Colossal squid"
+    },
+    {
+        "Question": "The famous scientist who discovered the principle of buoyancy is?",
+        "Answer": "Archimedes"
+    },
+    {
+        "Question": "The largest living species of coral is the?",
+        "Answer": "Brain coral"
+    },
+    {
+        "Question": "The largest island in the Pacific Ocean is?",
+        "Answer": "New Guinea"
+    },
+    {
+        "Question": "The famous artist who painted the famous painting \"The Night Watch\" is?",
+        "Answer": "Rembrandt van Rijn"
+    },
+    {
+        "Question": "The famous scientist who discovered the principle of gravity is?",
+        "Answer": "Galileo Galilei"
+    },
+    {
+        "Question": "The famous artist who painted the famous painting \"The Birth of Venus\" is?",
+        "Answer": "Sandro Botticelli"
+    },
+    {
+        "Question": "The largest island in the Arctic Ocean is?",
+        "Answer": "Greenland"
+    },
+    {
+        "Question": "The famous explorer who led the first expedition to reach the North Pole is which British explorer?",
+        "Answer": "Robert Peary"
+    },
+    {
+        "Question": "The highest mountain peak in the continent of Australia is located in which state?",
+        "Answer": "Tasmania"
+    },
+    {
+        "Question": "The first permanent Russian settlement in North America was established in which year?",
+        "Answer": "1784"
+    },
+    {
+        "Question": "The process of photosynthesis occurs in which part of a plant?",
+        "Answer": "Leaves"
+    },
+    {
+        "Question": "The process of mitosis occurs in which type of cell?",
+        "Answer": "Eukaryotic cells"
+    },
+    {
+        "Question": "The process of fermentation occurs in which type of cell?",
+        "Answer": "Prokaryotic cells"
+    },
+    {
+        "Question": "The highest waterfall in the world, by volume of water, is located in which country?",
+        "Answer": "Brazil"
+    },
+    {
+        "Question": "The famous painting \"The Mona Lisa\" is a portrait of which historical figure?",
+        "Answer": "Lisa Gherardini"
+    },
+    {
+        "Question": "The famous prehistoric monument Stonehenge is located in which English county?",
+        "Answer": "Wiltshire"
+    },
+    {
+        "Question": "The world's largest snowflake was recorded in which state in the United States?",
+        "Answer": "Montana"
+    },
+    {
+        "Question": "The highest temperature ever recorded on Earth was in which city in 1922?",
+        "Answer": "Death Valley"
+    },
+    {
+        "Question": "The world's largest island is Greenland, which is an autonomous territory within which country?",
+        "Answer": "Denmark"
+    },
+    {
+        "Question": "The highest mountain peak in the contiguous United States is located in which state?",
+        "Answer": "California"
+    },
+    {
+        "Question": "The process by which plants convert sunlight into energy is known as what?",
+        "Answer": "Photosynthesis"
+    },
+    {
+        "Question": "The largest living structure on Earth is the Great Barrier Reef, which is located in which ocean?",
+        "Answer": "Coral Sea"
+    },
+    {
+        "Question": "The famous music group \"The Rolling Stones\" was formed in which city in 1962?",
+        "Answer": "London"
+    },
+    {
+        "Question": "The famous explorer Ferdinand Magellan led the first expedition to circumnavigate which ocean?",
+        "Answer": "The Pacific"
+    },
+    {
+        "Question": "The largest living species of bear is the what, found in North America?",
+        "Answer": "Polar bear"
+    },
+    {
+        "Question": "The famous novel \"The Count of Monte Cristo\" was written by which French author?",
+        "Answer": "Alexandre Dumas"
+    },
+    {
+        "Question": "The highest waterfall in the world is located in which African country?",
+        "Answer": "Zimbabwe"
+    },
+    {
+        "Question": "The famous novel \"The Picture of Dorian Gray\" was written by which Irish author?",
+        "Answer": "Oscar Wilde"
+    },
+    {
+        "Question": "The first human to walk on the moon was which American astronaut in 1969?",
+        "Answer": "Neil Armstrong"
+    },
+    {
+        "Question": "The first permanent English settlement in Australia was established at which location in 1788?",
+        "Answer": "Sydney"
+    },
+    {
+        "Question": "The famous explorer who led the first expedition to reach the South Pole was which Norwegian explorer in 1911?",
+        "Answer": "Roald Amundsen"
+    },
+    {
+        "Question": "The largest planet in our solar system, in terms of diameter, is which gas giant?",
+        "Answer": "Jupiter"
+    },
+    {
+        "Question": "The deepest part of the ocean, the Challenger Deep, is located in which ocean?",
+        "Answer": "Pacific Ocean"
+    },
+    {
+        "Question": "The famous musician and singer-songwriter Bob Dylan was born in which year?",
+        "Answer": "1941"
+    },
+    {
+        "Question": "The largest island in the Mediterranean Sea is which island?",
+        "Answer": "Sicily"
+    },
+    {
+        "Question": "The famous scientist Charles Darwin proposed the theory of evolution through which process?",
+        "Answer": "Natural selection"
+    },
+    {
+        "Question": "The famous scientist Albert Einstein developed the theory of which phenomenon?",
+        "Answer": "Relativity"
+    },
+    {
+        "Question": "The chemical element with the symbol \"H\" is?",
+        "Answer": "Hydrogen"
+    },
+    {
+        "Question": "The famous scientist who developed the theory of plate tectonics is?",
+        "Answer": "Alfred Wegener"
+    },
+    {
+        "Question": "The chemical compound with the formula \"H2O\" is?",
+        "Answer": "Water"
+    },
+    {
+        "Question": "The famous ancient civilization of the Indus Valley was located in which region?",
+        "Answer": "South Asia"
+    },
+    {
+        "Question": "The first human spaceflight was achieved by which Soviet cosmonaut in 1961?",
+        "Answer": "Yuri Gagarin"
+    },
+    {
+        "Question": "The famous composer who wrote the opera \"Carmen\" was which Spanish composer?",
+        "Answer": "Georges Bizet"
+    },
+    {
+        "Question": "The largest living species of lizard, found in Indonesia, is called what?",
+        "Answer": "Komodo dragon"
+    },
+    {
+        "Question": "The famous physicist Marie Curie was the first woman to win which Nobel Prize?",
+        "Answer": "Physics"
+    },
+    {
+        "Question": "The highest mountain peak in South America, located in Chile, is called what?",
+        "Answer": "Aconcagua"
+    },
+    {
+        "Question": "The famous composer Ludwig van Beethoven was born in which German city?",
+        "Answer": "Bonn"
+    },
+    {
+        "Question": "The first successful human heart transplant was performed by which surgeon in 1967?",
+        "Answer": "Christiaan Barnard"
+    },
+    {
+        "Question": "The novel \"The Catcher in the Rye\" was written by which American author?",
+        "Answer": "J.D. Salinger"
+    },
+    {
+        "Question": "The first successful spacewalk was performed by which Soviet cosmonaut in 1965?",
+        "Answer": "Alexei Leonov"
+    },
+    {
+        "Question": "The famous explorer Ferdinand Magellan led the first expedition to circumnavigate which ocean?",
+        "Answer": "The Pacific Ocean"
+    },
+    {
+        "Question": "The highest mountain peak in the Himalayas is located in which country?",
+        "Answer": "Nepal"
+    },
+    {
+        "Question": "The famous scientist Marie Curie is credited with discovering which elements?",
+        "Answer": "Polonium and Radium"
+    },
+    {
+        "Question": "The first permanent English settlement in North America was established in which year?",
+        "Answer": "1607"
+    },
+    {
+        "Question": "The first human walked on the moon during which Apollo mission?",
+        "Answer": "Apollo 11"
+    },
+    {
+        "Question": "The famous scientist who developed the first successful polio vaccine is which American medical researcher?",
+        "Answer": "Jonas Salk"
+    },
+    {
+        "Question": "The first computer bug was discovered in which computer?",
+        "Answer": "Harvard Mark II"
+    },
+    {
+        "Question": "The highest waterfall in the world, located in Zambia, is called what?",
+        "Answer": "Victoria Falls"
+    },
+    {
+        "Question": "The largest living structure on Earth, according to the Guinness World Records, is the what?",
+        "Answer": "Great Barrier Reef"
+    },
+    {
+        "Question": "The famous physicist Albert Einstein is credited with developing which famous equation?",
+        "Answer": "E=mc^2"
+    },
+    {
+        "Question": "The famous composer Wolfgang Amadeus Mozart was born in which year?",
+        "Answer": "1756"
+    },
+    {
+        "Question": "The highest mountain peak in North America, located in Alaska, is called what?",
+        "Answer": "Denali"
+    },
+    {
+        "Question": "The largest living structure on Earth is the what, located in the Great Barrier Reef?",
+        "Answer": "Coral Reef"
+    },
+    {
+        "Question": "The largest desert in the world is the what, covering much of North Africa?",
+        "Answer": "Sahara"
+    },
+    {
+        "Question": "The famous explorer who led the first expedition to reach the summit of Mount Everest is which British mountaineer?",
+        "Answer": "Edmund Hillary"
+    },
+    {
+        "Question": "The famous composer who wrote the opera \"La Boh\u00e8me\" is which Italian composer?",
+        "Answer": "Giacomo Puccini"
+    },
+    {
+        "Question": "The highest mountain peak in the continent of Australia is located in which state?",
+        "Answer": "New South Wales"
+    },
+    {
+        "Question": "The famous composer Ludwig van Beethoven is credited with writing which symphony?",
+        "Answer": "Symphony No. 9"
+    },
+    {
+        "Question": "The Treaty of Versailles, signed in 1919, officially ended which war?",
+        "Answer": "World War I"
+    },
+    {
+        "Question": "The largest waterfall in the world by volume is located on the border of which two countries?",
+        "Answer": "Zambia and Zimbabwe"
+    },
+    {
+        "Question": "The highest mountain peak in the continent of Africa is located in which country?",
+        "Answer": "Tanzania"
+    },
+    {
+        "Question": "The ancient city of Petra is located in which Middle Eastern country?",
+        "Answer": "Jordan"
+    },
+    {
+        "Question": "The first permanent English settlement in North America was established at which location?",
+        "Answer": "Jamestown"
+    },
+    {
+        "Question": "The famous physicist who developed the theory of relativity is which German-born scientist?",
+        "Answer": "Albert Einstein"
+    },
+    {
+        "Question": "The city of Venice, built on more than 100 small islands, is located in which country?",
+        "Answer": "Italy"
+    },
+    {
+        "Question": "The famous prehistoric monument Stonehenge is located in which country?",
+        "Answer": "England"
+    },
+    {
+        "Question": "The famous explorer who led the first expedition to reach the summit of Mount Everest is which British climber?",
+        "Answer": "Tenzing Norgay"
+    },
+    {
+        "Question": "The Great Barrier Reef, located in the Coral Sea, is the world's largest structure made by which organism?",
+        "Answer": "Coral"
+    },
+    {
+        "Question": "The famous scientist Albert Einstein developed the theory of which fundamental force of nature?",
+        "Answer": "Gravity"
+    },
+    {
+        "Question": "The famous composer Wolfgang Amadeus Mozart was born in which city?",
+        "Answer": "Salzburg"
+    },
+    {
+        "Question": "The famous novel \"1984\" was written by which British author?",
+        "Answer": "George Orwell"
+    },
+    {
+        "Question": "The largest desert in the world, covering about 9,200,000 square kilometers, is the Sahara Desert, located in which continent?",
+        "Answer": "Africa"
+    },
+    {
+        "Question": "The famous novel \"Pride and Prejudice\" was written by which English author?",
+        "Answer": "Jane Austen"
+    },
+    {
+        "Question": "The famous scientist who developed the theory of evolution through natural selection is?",
+        "Answer": "Charles Darwin"
+    },
+    {
+        "Question": "The famous novel \"The Great Gatsby\" was written by which American author?",
+        "Answer": "F. Scott Fitzgerald"
+    },
+    {
+        "Question": "The famous scientist who developed the theory of gravity is which English physicist?",
+        "Answer": "Isaac Newton"
+    },
+    {
+        "Question": "The famous explorer who led the first expedition to reach the South Pole is which British explorer?",
+        "Answer": "Robert Falcon Scott"
+    },
+    {
+        "Question": "The famous painting \"The Scream\" was created by which Norwegian artist?",
+        "Answer": "Edvard Munch"
+    },
+    {
+        "Question": "The highest waterfall in the world, by volume of water, is located in which country?",
+        "Answer": "Zambia"
+    },
+    {
+        "Question": "The famous scientist Albert Einstein is credited with developing which famous equation?",
+        "Answer": "E=mc\u00b2"
+    },
+    {
+        "Question": "The ancient city of Angkor Wat is located in which country?",
+        "Answer": "Cambodia"
+    },
+    {
+        "Question": "The highest mountain peak in the Andes mountain range is located in which country?",
+        "Answer": "Argentina"
+    },
+    {
+        "Question": "The famous painting \"The Last Supper\" was created by which Italian artist?",
+        "Answer": "Leonardo da Vinci"
+    },
+    {
+        "Question": "The highest waterfall in the world, by height, is located in which country?",
+        "Answer": "Venezuela"
+    },
+    {
+        "Question": "The ancient city of Pompeii was destroyed by which volcanic eruption in 79 AD?",
+        "Answer": "Mount Vesuvius"
+    },
+    {
+        "Question": "The largest desert in the world, covering over 9,000,000 square kilometers, is the what?",
+        "Answer": "Sahara Desert"
+    },
+    {
+        "Question": "The largest living species of shark is the what, found in warm and tropical waters?",
+        "Answer": "Whale Shark"
+    },
+    {
+        "Question": "The famous music group \"The Beatles\" was formed in which city in 1960?",
+        "Answer": "Liverpool"
+    },
+    {
+        "Question": "The ancient city of Machu Picchu is located in which South American country?",
+        "Answer": "Peru"
+    },
+    {
+        "Question": "The famous novel \"The Lord of the Rings\" was written by which British author?",
+        "Answer": "J.R.R. Tolkien"
+    },
+    {
+        "Question": "The highest mountain peak in the world, above sea level, is located in which mountain range?",
+        "Answer": "The Himalayas"
+    },
+    {
+        "Question": "What is the chemical symbol for gold?",
+        "Answer": "Au"
+    },
+    {
+        "Question": "Who painted the famous artwork \"The Starry Night\"?",
+        "Answer": "Vincent van Gogh"
+    },
+    {
+        "Question": "The Great Barrier Reef is located off the coast of which country?",
+        "Answer": "Australia"
+    },
+    {
+        "Question": "Who was the first president of the United States?",
+        "Answer": "George Washington"
+    },
+    {
+        "Question": "The novel \"To Kill a Mockingbird\" was written by which author?",
+        "Answer": "Harper Lee"
+    },
+    {
+        "Question": "The highest mountain peak in the solar system is located on which planet?",
+        "Answer": "Mars"
+    },
+    {
+        "Question": "The famous painting \"The Mona Lisa\" is housed in which museum?",
+        "Answer": "The Louvre"
+    },
+    {
+        "Question": "The largest living species of lizard is the Komodo dragon, found in which country?",
+        "Answer": "Indonesia"
+    },
+    {
+        "Question": "Who was the lead singer of the rock band Queen?",
+        "Answer": "Freddie Mercury"
+    },
+    {
+        "Question": "The famous mathematical constant pi (\u03c0) is approximately equal to which decimal value?",
+        "Answer": "3.14159"
+    },
+    {
+        "Question": "The first human to walk on the Moon was American astronaut Neil Armstrong, who landed on the Moon's surface on which date?",
+        "Answer": "July 20, 1969"
+    },
+    {
+        "Question": "The famous novel \"Pride and Prejudice\" was written by which English author?",
+        "Answer": "Jane Austen"
+    },
+    {
+        "Question": "The highest mountain peak in the world is located in which country?",
+        "Answer": "Nepal"
+    },
+    {
+        "Question": "The famous painting \"The Scream\" was created by which Norwegian artist?",
+        "Answer": "Edvard Munch"
+    },
+    {
+        "Question": "The largest desert in the world is the Sahara Desert, located in which continent?",
+        "Answer": "Africa"
+    },
+    {
+        "Question": "The famous novel \"The Lord of the Rings\" was written by which British author?",
+        "Answer": "J.R.R. Tolkien"
+    },
+    {
+        "Question": "The first computer bug was an actual insect that got stuck in which computer?",
+        "Answer": "Harvard Mark II"
+    },
+    {
+        "Question": "The famous painting \"The Starry Night\" was created by which Dutch post-impressionist artist?",
+        "Answer": "Vincent van Gogh"
+    },
+    {
+        "Question": "The largest living structure on Earth is the Great Barrier Reef, located in which country?",
+        "Answer": "Australia"
+    },
+    {
+        "Question": "The first permanent English settlement in North America was established at which location in 1607?",
+        "Answer": "Jamestown"
+    },
+    {
+        "Question": "The famous novel \"To Kill a Mockingbird\" was written by which American author?",
+        "Answer": "Harper Lee"
+    },
+    {
+        "Question": "The highest mountain peak in the solar system is located on which planet?",
+        "Answer": "Mars"
+    },
+    {
+        "Question": "The ancient city of Pompeii was destroyed by which volcanic eruption in 79 AD?",
+        "Answer": "Mount Vesuvius"
+    },
+    {
+        "Question": "The famous physicist Albert Einstein is credited with developing which famous equation?",
+        "Answer": "E=mc^2"
+    },
+    {
+        "Question": "The largest planet in our solar system is which gas giant?",
+        "Answer": "Jupiter"
+    },
+    {
+        "Question": "The famous composer Ludwig van Beethoven was born in which German city?",
+        "Answer": "Bonn"
+    },
+    {
+        "Question": "The first successful human heart transplant was performed by which South African surgeon in 1967?",
+        "Answer": "Christiaan Barnard"
+    }
+]

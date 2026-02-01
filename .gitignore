@@ -1,0 +1,11 @@
+output/
+tmp/
+*.bin
+*.log
+*.log.*
+*.pyc
+*.csv
+*.png
+wandb/
+ipynb/
+*.ipynb
