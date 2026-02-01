@@ -289,6 +289,7 @@ inline int num_splits_heuristic(int batch_nheads_mblocks, int num_SMs, int num_n
     for (int num_splits = 1; num_splits <= max_splits; num_splits++) {
         if (!is_split_eligible(num_splits)) { continue; }
         if (efficiency[num_splits - 1] >= 0.85 * max_efficiency) {
+            // printf("num_splits chosen = %d\n", num_splits);
             return num_splits;
         }
     }
@@ -301,7 +302,7 @@ std::tuple<at::Tensor, at::Tensor> set_params_splitkv(Flash_fwd_params &params, 
     const int num_splits, const int num_sm, struct c10::TensorOptions opts) {
 
     // This needs to match with run_mha_fwd_splitkv_dispatch
-    const int block_n = head_size <= 64 ? 256 : (head_size <= 128 ? 32 : 64);
+    const int block_n = head_size <= 64 ? 256 : (head_size <= 128 ? 128 : 64);
     const int num_n_blocks = (max_seqlen_k + block_n - 1) / block_n;
     // Technically kBlockM = 64 only for the splitKV kernels, not the standard kernel.
     // In any case we don't expect seqlen_q to be larger than 64 for inference.

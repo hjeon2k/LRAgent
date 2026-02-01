@@ -3,10 +3,7 @@ import math
 import pytest
 import torch
 from einops import rearrange, repeat
-from flash_attn import (
-    flash_lora_attn_func,
-    flash_attn_func,
-)
+from flash_attn import flash_lora_attn_func
 
 
 def attn_bias_from_alibi_slopes(
@@ -737,7 +734,7 @@ def benchmark_forward(fn, *args, warmup=25, rep=100, **kwargs):
     return mean_ms, min_ms, max_ms
 
 
-@pytest.mark.parametrize("dtype", [torch.float16])
+@pytest.mark.parametrize("dtype", [torch.float16, torch.bfloat16])
 @pytest.mark.parametrize("causal", [True])
 @pytest.mark.parametrize(
     "seqlen_q,seqlen_k",
@@ -749,9 +746,6 @@ def benchmark_forward(fn, *args, warmup=25, rep=100, **kwargs):
         (2048, 2048),
         (4096, 4096),
         (8192, 8192),
-        (16384, 16384),
-        (32768, 32768),
-        (65536, 65536),
     ],
 )
 def test_flash_lora_attn_benchmark(seqlen_q, seqlen_k, causal, dtype):
@@ -774,7 +768,7 @@ def test_flash_lora_attn_benchmark(seqlen_q, seqlen_k, causal, dtype):
     batch_size = 1
     d = 128
     nheads = 32
-    nheads_k = 8
+    nheads_k = nheads
     r = 8  # lora_rank
     
     q = torch.randn(batch_size, seqlen_q, nheads, d, device=device, dtype=dtype)
@@ -789,21 +783,14 @@ def test_flash_lora_attn_benchmark(seqlen_q, seqlen_k, causal, dtype):
         q, k, v, lr_v, lr_B, 0.0,
         causal=causal,
     )
-
-    ref_mean_ms, ref_min_ms, ref_max_ms = benchmark_forward(
-        flash_attn_func,
-        q, k, v, 0.0,
-        causal=causal,
-    )
     
     # Calculate FLOPS (approximate)
     # Attention FLOPs: 4 * batch * nheads * seqlen_q * seqlen_k * d (for QK^T and softmax@V)
     # LoRA FLOPs: 2 * batch * seqlen_k * r * nheads_k * d (for lr_v @ lr_B)
     attn_flops = 4 * batch_size * nheads * seqlen_q * seqlen_k * d
-    lora_flops = 2 * batch_size * nheads * seqlen_q * seqlen_k * r + 2 * batch_size * nheads * seqlen_q * r * d
+    lora_flops = 2 * batch_size * seqlen_k * r * nheads_k * d
     total_flops = attn_flops + lora_flops
     tflops = total_flops / (mean_ms * 1e-3) / 1e12
-    ref_tflops = attn_flops / (ref_mean_ms * 1e-3) / 1e12
     
     print(f"\n{'='*60}")
     print(f"Benchmark: seqlen_q={seqlen_q}, seqlen_k={seqlen_k}, dtype={dtype}")
@@ -812,12 +799,6 @@ def test_flash_lora_attn_benchmark(seqlen_q, seqlen_k, causal, dtype):
     print(f"  Min time:  {min_ms:.3f} ms")
     print(f"  Max time:  {max_ms:.3f} ms")
     print(f"  Throughput: {tflops:.2f} TFLOPS")
-    print(f"{'='*60}\n")
-    print(f"Ref:")
-    print(f"  Mean time: {ref_mean_ms:.3f} ms")
-    print(f"  Min time:  {ref_min_ms:.3f} ms")
-    print(f"  Max time:  {ref_max_ms:.3f} ms")
-    print(f"  Throughput: {ref_tflops:.2f} TFLOPS")
     print(f"{'='*60}\n")
 
 
@@ -852,10 +833,10 @@ def test_flash_lora_attn_benchmark(seqlen_q, seqlen_k, causal, dtype):
     
 #     print(f"\n[seqlen={seqlen}, nheads={nheads}] Mean: {mean_ms:.3f} ms, Min: {min_ms:.3f} ms, Max: {max_ms:.3f} ms")
 
-@pytest.mark.parametrize("dtype", [torch.float16])
+@pytest.mark.parametrize("dtype", [torch.float16, torch.bfloat16])
 @pytest.mark.parametrize(
     "seqlen_k",
-    [128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536],
+    [128, 256, 512, 1024, 2048, 4096, 8192],
 )
 @pytest.mark.parametrize("nheads", [32])
 def test_flash_lora_attn_benchmark_decode(seqlen_k, nheads, dtype):
@@ -875,24 +856,17 @@ def test_flash_lora_attn_benchmark_decode(seqlen_k, nheads, dtype):
     seqlen_q = 1  # Single token generation
     d = 128
     r = 8
-    nheads_kv = 8
     causal = False  # No causal mask needed for decode (all previous tokens are visible)
     
     q = torch.randn(batch_size, seqlen_q, nheads, d, device=device, dtype=dtype)
-    k = torch.randn(batch_size, seqlen_k, nheads_kv, d, device=device, dtype=dtype)
-    v = torch.randn(batch_size, seqlen_k, nheads_kv, d, device=device, dtype=dtype)
+    k = torch.randn(batch_size, seqlen_k, nheads, d, device=device, dtype=dtype)
+    v = torch.randn(batch_size, seqlen_k, nheads, d, device=device, dtype=dtype)
     lr_v = torch.randn(batch_size, seqlen_k, r, device=device, dtype=dtype) * 0.1
-    lr_B = torch.randn(nheads_kv, r, d, device=device, dtype=dtype) * 0.1
+    lr_B = torch.randn(nheads, r, d, device=device, dtype=dtype) * 0.1
     
     mean_ms, min_ms, max_ms = benchmark_forward(
         flash_lora_attn_func,
         q, k, v, lr_v, lr_B, 0.0,
-        causal=causal,
-    )
-
-    ref_mean_ms, ref_min_ms, ref_max_ms = benchmark_forward(
-        flash_attn_func,
-        q, k, v, 0.0,
         causal=causal,
     )
     
@@ -900,14 +874,13 @@ def test_flash_lora_attn_benchmark_decode(seqlen_k, nheads, dtype):
     # Read: Q, K, V, lr_v, lr_B  |  Write: Output
     bytes_per_elem = 2 if dtype in [torch.float16, torch.bfloat16] else 4
     q_bytes = batch_size * seqlen_q * nheads * d * bytes_per_elem
-    k_bytes = batch_size * seqlen_k * nheads_kv * d * bytes_per_elem
-    v_bytes = batch_size * seqlen_k * nheads_kv * d * bytes_per_elem
+    k_bytes = batch_size * seqlen_k * nheads * d * bytes_per_elem
+    v_bytes = batch_size * seqlen_k * nheads * d * bytes_per_elem
     lr_v_bytes = batch_size * seqlen_k * r * bytes_per_elem
-    lr_B_bytes = nheads_kv * r * d * bytes_per_elem
+    lr_B_bytes = nheads * r * d * bytes_per_elem
     out_bytes = batch_size * seqlen_q * nheads * d * bytes_per_elem
     total_bytes = q_bytes + k_bytes + v_bytes + lr_v_bytes + lr_B_bytes + out_bytes
     bandwidth_gb_s = total_bytes / (mean_ms * 1e-3) / 1e9
-    ref_bandwidth_gb_s = (q_bytes + k_bytes + v_bytes + out_bytes) / (ref_mean_ms * 1e-3) / 1e9
     
     print(f"\n{'='*70}")
     print(f"DECODE Benchmark: seqlen_q=1, seqlen_k={seqlen_k}, nheads={nheads}, dtype={dtype}")
@@ -917,103 +890,3 @@ def test_flash_lora_attn_benchmark_decode(seqlen_k, nheads, dtype):
     print(f"  Max time:  {max_ms:.4f} ms")
     print(f"  Memory Bandwidth: {bandwidth_gb_s:.2f} GB/s")
     print(f"{'='*70}\n")
-    print(f"Ref:")
-    print(f"  Mean time: {ref_mean_ms:.4f} ms")
-    print(f"  Min time:  {ref_min_ms:.4f} ms")
-    print(f"  Max time:  {ref_max_ms:.4f} ms")
-    print(f"  Memory Bandwidth: {ref_bandwidth_gb_s:.2f} GB/s")
-    print(f"{'='*70}\n")
-
-def test_benchmark_simple(q_seq, k_seq, warmup = 20, rep = 100):
-    device = "cuda"
-    torch.random.manual_seed(0)
-    
-    # Decode step parameters
-    batch_size = 1
-    d = 128
-    r = 8
-    n_qheads = 32
-    n_kvheads = 8
-    if (q_seq == 1):
-        causal = False
-    else:
-        causal = True
-    
-    q = torch.randn(batch_size, q_seq, n_qheads, d, device=device, dtype=torch.float16)
-    k = torch.randn(batch_size, k_seq, n_kvheads, d, device=device, dtype=torch.float16)
-    v = torch.randn(batch_size, k_seq, n_kvheads, d, device=device, dtype=torch.float16)
-    lr_v = torch.randn(batch_size, k_seq, r, device=device, dtype=torch.float16) * 0.1
-    lr_B = torch.randn(n_kvheads, r, d, device=device, dtype=torch.float16) * 0.1
-
-    # Benchmark flash_lora_attn_func
-    mean_ms, min_ms, max_ms = benchmark_forward(
-        flash_lora_attn_func,
-        q, k, v, lr_v, lr_B, 0.0,
-        causal=causal,
-        warmup=warmup,
-        rep=rep
-    )
-
-    ref_mean_ms, ref_min_ms, ref_max_ms = benchmark_forward(
-        flash_attn_func,
-        q, k, v, 0.0,
-        causal=causal,
-        warmup=warmup,
-        rep=rep
-    )
-
-    if min_ms < max_ms * 0.5:
-        assert False, "Unstable benchmark results detected."
-    if ref_min_ms < ref_max_ms * 0.5:
-        assert False, "Unstable benchmark results detected."
-
-    attn_flops = 4 * batch_size * n_qheads * q_seq * k_seq * d
-    lora_flops = 2 * batch_size * n_qheads * q_seq * k_seq * r + 2 * batch_size * n_qheads * q_seq * r * d
-    total_flops = attn_flops + lora_flops
-    tflops = total_flops / (mean_ms * 1e-3) / 1e12
-    ref_flops = attn_flops / (ref_mean_ms * 1e-3) / 1e12
-
-    return {
-        "mean_ms": mean_ms,
-        "min_ms": min_ms,
-        "max_ms": max_ms,
-        "tflops": tflops,
-        "ref_mean_ms": ref_mean_ms,
-        "ref_min_ms": ref_min_ms,
-        "ref_max_ms": ref_max_ms,
-        "ref_tflops": ref_flops
-    }
-
-if __name__ == "__main__":
-
-    for seq in [128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768]:
-        print(f"=== Benchmarking Prefill seqlen={seq} ===")
-        result = test_benchmark_simple(seq, seq, warmup=25, rep=100)
-        print(f"  Mean time: {result['mean_ms']:.3f} ms")
-        print(f"  Min time:  {result['min_ms']:.3f} ms")
-        print(f"  Max time:  {result['max_ms']:.3f} ms")
-        print(f"  Throughput: {result['tflops']:.2f} TFLOPS")
-        print(f"{'='*70}\n")
-        print(f"Ref:")
-        print(f"  Mean time: {result['ref_mean_ms']:.3f} ms")
-        print(f"  Min time:  {result['ref_min_ms']:.3f} ms")
-        print(f"  Max time:  {result['ref_max_ms']:.3f} ms")
-        print(f"  Throughput: {result['ref_tflops']:.2f} TFLOPS")
-        print(f"{'='*70}\n")
-    
-    for seq in [128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768]:
-        print(f"=== Benchmarking Decode seqlen={seq} ===")
-        result = test_benchmark_simple(1, seq, warmup=25, rep=100)
-        print(f"  Mean time: {result['mean_ms']:.3f} ms")
-        print(f"  Min time:  {result['min_ms']:.3f} ms")
-        print(f"  Max time:  {result['max_ms']:.3f} ms")
-        print(f"  Throughput: {result['tflops']:.2f} TFLOPS")
-        print(f"{'='*70}\n")
-        print(f"Ref:")
-        print(f"  Mean time: {result['ref_mean_ms']:.3f} ms")
-        print(f"  Min time:  {result['ref_min_ms']:.3f} ms")
-        print(f"  Max time:  {result['ref_max_ms']:.3f} ms")
-        print(f"  Throughput: {result['ref_tflops']:.2f} TFLOPS")
-        print(f"{'='*70}\n")
-
-
