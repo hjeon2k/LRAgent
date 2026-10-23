@@ -27,9 +27,86 @@ logger = logging.get_logger(__name__)
 
 if is_flash_attn_2_available():
     from flash_attn.bert_padding import index_first_axis, pad_input, unpad_input  # noqa
-    from flash_attn import flash_attn_func, flash_attn_varlen_func, flash_lora_attn_func
+    from flash_attn import flash_attn_func, flash_attn_varlen_func
 
     _flash_supports_window_size = "window_size" in list(inspect.signature(flash_attn_func).parameters)
+
+
+# Flash LoRA Attention (LRAgent) is provided by the CuTe DSL package `custom_opt_attn_cute`
+# (src/flash-lora-attention-cute). It is imported lazily on first use so that importing
+# transformers does not require (or JIT-initialize) the CuTe DSL toolchain.
+_flash_lora_attn_v_func = None
+
+
+def _get_flash_lora_attn_v_func():
+    global _flash_lora_attn_v_func
+    if _flash_lora_attn_v_func is None:
+        try:
+            from custom_opt_attn_cute import flash_lora_attn_v_func
+        except ImportError as e:
+            raise ImportError(
+                "Flash LoRA Attention requires the `custom_opt_attn_cute` package "
+                "(src/flash-lora-attention-cute). Install it with "
+                "`pip install -e src/flash-lora-attention-cute`."
+            ) from e
+        _flash_lora_attn_v_func = flash_lora_attn_v_func
+    return _flash_lora_attn_v_func
+
+
+def _flash_lora_attn_v_cute(
+    query_states: torch.Tensor,
+    key_states: torch.Tensor,
+    value_states: torch.Tensor,
+    lr_value_states: torch.Tensor,
+    lr_B: torch.Tensor,
+    softmax_scale: Optional[float],
+    causal: bool,
+    dropout: float = 0.0,
+    softcap: Optional[float] = None,
+    window_size: Optional[tuple] = None,
+) -> torch.Tensor:
+    """
+    Calls the CuTe DSL Flash LoRA Attention (V-only) kernel:
+        O = softmax(Q K^T * scale) @ (V + lr_value_states @ lr_B)
+
+    Arguments (all `(batch, seqlen, ...)` layout, i.e. already transposed for flash attention):
+        query_states: (batch, seqlen_q, num_heads, head_dim)
+        key_states / value_states: (batch, seqlen_k, num_kv_heads, head_dim)
+        lr_value_states: (batch, seqlen_k, rank) -- the low-rank ("LR") value cache (lora_A(x) * scaling)
+        lr_B: (num_kv_heads, rank, head_dim) -- the lora_B weight of v_proj, per KV head
+        window_size: FlashAttention-2 style `(left, right)` window; `None`/negative means unlimited.
+    """
+    if dropout > 0.0:
+        raise NotImplementedError("Flash LoRA Attention (CuTe) is inference-only and does not support dropout.")
+    if softcap is not None and softcap != 0.0:
+        raise NotImplementedError("Flash LoRA Attention (CuTe) does not support softcap.")
+
+    flash_lora_attn_v_func = _get_flash_lora_attn_v_func()
+
+    # q/k/v may have been re-cast by `fa_peft_integration_check`; the kernel requires one dtype for all inputs.
+    lr_value_states = lr_value_states.to(query_states.dtype)
+    lr_B = lr_B.to(query_states.dtype)
+
+    if window_size is None:
+        window = (None, None)
+    else:
+        left, right = window_size
+        window = (
+            None if left is None or left < 0 else int(left),
+            None if right is None or right < 0 else int(right),
+        )
+
+    attn_output, _ = flash_lora_attn_v_func(
+        query_states,
+        key_states,
+        value_states,
+        lr_value_states,
+        lr_B,
+        softmax_scale=softmax_scale,
+        causal=causal,
+        window_size=window,
+    )
+    return attn_output
 
 
 def _get_unpad_data(attention_mask: torch.Tensor) -> tuple[torch.Tensor, torch.Tensor, int]:
@@ -476,9 +553,18 @@ def _flash_lora_attention_forward(
 
         attn_output = attn_output.view(batch_size, -1, attn_output.size(-2), attn_output.size(-1))
 
-    else:  # prefill
-        attn_output = flash_lora_attn_func(
-            query_states, key_states, value_states, lr_value_states, lr_B, dropout, softmax_scale=softmax_scale, causal=causal, **flash_kwargs
+    else:  # prefill / decode without padding: Flash LoRA Attention (CuTe DSL) kernel
+        attn_output = _flash_lora_attn_v_cute(
+            query_states,
+            key_states,
+            value_states,
+            lr_value_states,
+            lr_B,
+            softmax_scale=softmax_scale,
+            causal=causal,
+            dropout=dropout,
+            softcap=softcap,
+            window_size=flash_kwargs.get("window_size"),
         )
 
     return attn_output

@@ -86,7 +86,7 @@ def flash_lora_attention_forward(
     query = query.transpose(1, 2)  # [B, L, H_num, H_dim]
     key = key.transpose(1, 2)  # [B, L, H_kv_num, H_dim]
     value = value.transpose(1, 2)  # [B, L, H_kv_num, H_dim]
-    # lr_value: [B, L, r], lr_B: [r, H_kv_num, H_dim]
+    # lr_value: [B, L, r], lr_B: [H_kv_num, r, H_dim] (see LlamaAttention.forward)
 
     # In PEFT, usually we cast the layer norms in float32 for training stability reasons
     # therefore the input hidden states gets silently casted in float32. Hence, we need

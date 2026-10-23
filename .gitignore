@@ -9,3 +9,5 @@ tmp/
 wandb/
 ipynb/
 *.ipynb
+*.egg-info/
+.pytest_cache/
