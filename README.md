@@ -46,16 +46,25 @@ Outputs are written under:
 
 ## 2) Runtime setup 
 
+The Flash LoRA Attention kernel is the CuTe DSL implementation in
+`src/flash-lora-attention-cute` (cloned from
+[summerbro-hhj/flash-lora-attention-cute](https://github.com/summerbro-hhj/flash-lora-attention-cute),
+commit `6ac4ad2`, with a small fix in `custom_opt_attn_cute/interface.py`). It needs an SM80-class GPU (A100 / RTX A6000), Python 3.11,
+torch 2.9.1 (cu129) and `nvidia-cutlass-dsl==4.4.2`; `requirements.txt` pins the verified set.
+The old C++ extension in `src/flash-attention/csrc/flash_lora_attn` is no longer built or used;
+a stock FlashAttention-2 wheel is still required for the padded / varlen (non-LoRA) code paths.
+
 1. Install the runtime environment:
 
    ```bash
-   conda create -n lragent python==3.11 && pip install -r requirements.txt
+   conda create -n lragent python==3.11 && conda activate lragent
+   pip install -r requirements.txt
    ```
 
 2. Install modified source packages in `src/`:
 
    ```bash
-   pip install -e src/fastchat src/transformers src/peft && cd src/flash-attention && python setup.py install
+   pip install -e src/flash-lora-attention-cute -e src/transformers -e src/peft -e src/FastChat
    ```
 
    You can symlink directly into your site-packages for langchain, e.g.:
@@ -64,14 +73,22 @@ Outputs are written under:
    ln -s $(pwd)/src/langchain $CONDA_PREFIX/lib/python3.11/site-packages/langchain
    ```
 
-3. Main modified files and folder for LRAgent:
+3. (Optional) persist the JIT-compiled kernels across processes (first compile takes ~30 s per configuration):
 
-* `src/transformers/cache_utils.py`
-* `src/transformers/models/llama/modeling_llama.py`
-* `src/transformers/models/mistral/modeling_mistral.py`
-* `src/peft/tuners/lora/layer.py`
-* `fastchat/serve/inference.py`
-* `csrc/flash_lora_attn`
+   ```bash
+   export FLASH_LORA_ATTENTION_CUTE_DSL_CACHE_ENABLED=1
+   ```
+
+4. Main modified files and folder for LRAgent:
+
+* `src/transformers/src/transformers/cache_utils.py`
+* `src/transformers/src/transformers/models/llama/modeling_llama.py`
+* `src/transformers/src/transformers/models/mistral/modeling_mistral.py`
+* `src/transformers/src/transformers/modeling_flash_attention_utils.py` (`_flash_lora_attention_forward` → `custom_opt_attn_cute.flash_lora_attn_v_func`)
+* `src/peft/src/peft/tuners/lora/layer.py`
+* `src/FastChat/fastchat/serve/inference.py`
+* `src/flash-lora-attention-cute/custom_opt_attn_cute/interface.py` (Flash LoRA Attention kernel)
+
 
 
 ## 3) Start FastChat 

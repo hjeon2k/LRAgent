@@ -1,0 +1,3 @@
+[submodule "src/flash-lora-attention-cute"]
+	path = src/flash-lora-attention-cute
+	url = https://github.com/summerbro-hhj/flash-lora-attention-cute
