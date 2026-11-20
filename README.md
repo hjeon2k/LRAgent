@@ -8,17 +8,24 @@ This is the official implementation of LRAgent which contains code to train LoRA
 LRAgent is an efficient KV-cache sharing framework for multi-LoRA LLM agents that shares highly similar base caches induced by the pretrained weights, while keeping lightweight low-rank caches induced by the LoRA adapters.
 
 
-## 0) Google Custom Search setup
+## 0) Web search setup
 
-If you want to enable web search during agent execution, create a **Google Programmable Search Engine** and obtain a search engine ID (`cx`) and API key(`key`).
+To enable web search during agent execution, choose a provider and export its credentials before running the benchmark.
 
-1. Create a project: [https://developers.google.com/custom-search/v1/overview?hl=ko](https://developers.google.com/custom-search/v1/overview?hl=ko)
-2. In Google Cloud Console, enable **Custom Search JSON API** for the project.
-3. Create an API key: **Cloud Console → APIs & Services → Credentials**.
-4. Create a search engine and note its ID (`cx`) and retrieve the API key (`key`).
-5. Paste the key and ID into:
+**Brave Search** works with a new [Brave Search API account](https://brave.com/search/api/).
 
-   * `Self_Plan/Group_Planning/benchmark_run/utils.py` (line 194 and 195)
+```bash
+export LRAGENT_SEARCH_PROVIDER=brave
+export BRAVE_SEARCH_API_KEY="<your Brave Search API key>"
+```
+
+**Google Custom Search** remains the default for existing customers. The [Custom Search JSON API](https://developers.google.com/custom-search/v1/overview) is closed to new customers and Google will discontinue it on January 1, 2027.
+
+```bash
+export LRAGENT_SEARCH_PROVIDER=google
+export GOOGLE_API_KEY="<your Google API key>"
+export GOOGLE_CSE_ID="<your Programmable Search Engine ID>"
+```
 
 
 ## 1) Train LoRA adapters
