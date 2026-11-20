@@ -1,5 +1,8 @@
+#!/usr/bin/env bash
+set -e
+
 gpu="3"
-agents=("action" "reflect")
+agents=("plan" "action" "reflect")
 
 model="meta-llama/Llama-3.1-8B-Instruct"
 model_alias="llama-3_1-8b"
@@ -17,33 +20,43 @@ ep="10"
 
 proj="all"
 
-for agent in ${agents[@]}; do
-echo "####################"
-echo $agent
-echo "####################"
-set -x
-CUDA_VISIBLE_DEVICES=$gpu python Self_Plan/Train/train_lora.py \
-    --model_name_or_path $model \
-    --lora_r 8 \
-    --lora_alpha 16 \
-    --lora_dropout 0.05 \
-    --data_path Self_Plan/Traj_Syn/data/filtered/70b_$qa/v2/data_$agent.json \
-    --output_dir Self_Plan/Train/output/$model_alias/$qa/proj_$proj/$lr/${ep}ep/$agent \
-    --lora_A_dir Self_Plan/Train/output/$model_alias/$qa/proj_$proj/$plan_lr/${ep}ep/plan \
-    --lora_target_modules q_proj k_proj v_proj o_proj gate_proj up_proj down_proj \
-    --num_train_epochs $ep \
-    --learning_rate $lr \
-    --weight_decay 0 \
-    --warmup_ratio 0.05 \
-    --model_max_length 32768 \
-    --lr_scheduler_type "cosine" \
-    --per_device_train_batch_size 4 \
-    --gradient_accumulation_steps 8 \
-    --logging_steps 5 \
-    --eval_strategy "no" \
-    --save_strategy "epoch" \
-    --save_total_limit 2 \
-    --bf16 True \
-    --gradient_checkpointing True \
-    --resume_from_checkpoint False
+plan_dir="Self_Plan/Train/output/$model_alias/$qa/proj_$proj/$plan_lr/${ep}ep/plan"
+
+for agent in "${agents[@]}"; do
+    role_lr="$lr"
+    shared_a_args=(--lora_A_dir "$plan_dir")
+    if [[ "$agent" == "plan" ]]; then
+        if [[ -s "$plan_dir/adapter_model.safetensors" || -s "$plan_dir/adapter_model.bin" ]]; then
+            echo "Reusing plan adapter weights in $plan_dir"
+            continue
+        fi
+        role_lr="$plan_lr"
+        shared_a_args=()
+    fi
+
+    echo "Training $agent"
+    CUDA_VISIBLE_DEVICES=$gpu python Self_Plan/Train/train_lora.py \
+        --model_name_or_path $model \
+        --lora_r 8 \
+        --lora_alpha 16 \
+        --lora_dropout 0.05 \
+        --data_path Self_Plan/Traj_Syn/data/filtered/70b_$qa/v2/data_$agent.json \
+        --output_dir "Self_Plan/Train/output/$model_alias/$qa/proj_$proj/$role_lr/${ep}ep/$agent" \
+        "${shared_a_args[@]}" \
+        --lora_target_modules q_proj k_proj v_proj o_proj gate_proj up_proj down_proj \
+        --num_train_epochs $ep \
+        --learning_rate "$role_lr" \
+        --weight_decay 0 \
+        --warmup_ratio 0.05 \
+        --model_max_length 32768 \
+        --lr_scheduler_type "cosine" \
+        --per_device_train_batch_size 4 \
+        --gradient_accumulation_steps 8 \
+        --logging_steps 5 \
+        --eval_strategy "no" \
+        --save_strategy "epoch" \
+        --save_total_limit 2 \
+        --bf16 True \
+        --gradient_checkpointing True \
+        --resume_from_checkpoint False
 done
