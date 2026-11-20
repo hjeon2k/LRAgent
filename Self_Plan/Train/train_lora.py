@@ -108,55 +108,45 @@ def get_peft_state_maybe_zero_3(named_params, bias):
     return to_return
 
 
-def load_lora_A_weights(model, lora_A_dir, target_modules=["v_proj"], output_dir=None):
-    """
-    Load lora_A parameters from a pretrained adapter directory.
-    
-    Args:
-        model: The PEFT model to load weights into
-        lora_A_dir: Directory containing the pretrained adapter weights
-        target_modules: List of module names to load lora_A from (default: ["v_proj"])
-    """
-    adapters_weights = None
-    extensions = ["safetensors", "bin"]
-    
-    for extension in extensions:
-        lora_A_path = os.path.join(lora_A_dir, f"adapter_model.{extension}")
-        if os.path.exists(lora_A_path):
-            print(f"Checking lora_A parameters from {', '.join(target_modules)} from {lora_A_dir}")
-            if extension == "safetensors":
-                adapters_weights = safetensors.torch.load_file(lora_A_path, device="cpu")
-            else:
-                adapters_weights = torch.load(lora_A_path, map_location="cpu")
-            print(f"Found adapter weights from {lora_A_path}")
-            break
+def find_lora_a_checkpoint(adapter_dir):
+    for filename in ("adapter_model.safetensors", "adapter_model.bin"):
+        checkpoint = pathlib.Path(adapter_dir) / filename
+        if checkpoint.is_file():
+            return checkpoint
+    raise FileNotFoundError(
+        f"No adapter_model.safetensors or adapter_model.bin in {adapter_dir}. "
+        "Train the plan adapter first or point --lora_A_dir to its checkpoint."
+    )
 
-    if adapters_weights is not None:
-        lora_A_filtered = {
-            k: v for k, v in adapters_weights.items()
-            if "lora_A" in k and any(module in k for module in target_modules)
-        }
-        if len(lora_A_filtered) > 0:
-            set_peft_model_state_dict(model, lora_A_filtered, adapter_name="default")
-            print(f"Successfully loaded {len(lora_A_filtered)} lora_A parameters from {', '.join(target_modules)}")
-            
-            # Freeze the loaded lora_A parameters (make them non-trainable)
-            frozen_count = 0
-            for name, param in model.named_parameters():
-                if "lora_A" in name and any(module in name for module in target_modules):
-                    param.requires_grad = False
-                    frozen_count += 1
-            print(f"Frozen {frozen_count} lora_A parameters from {', '.join(target_modules)} (not trainable)")
-        else:
-            print(f"Warning: No lora_A parameters found for {', '.join(target_modules)} in adapter weights")
+
+def load_lora_A_weights(model, checkpoint):
+    if checkpoint.suffix == ".safetensors":
+        adapter_weights = safetensors.torch.load_file(str(checkpoint), device="cpu")
     else:
-        print(f"Warning: No adapter files found at {lora_A_dir}")
-        if "plan" in output_dir:
-            output_dir = output_dir.replace("v3", "v2")
-        print(f"Will be saved at: {output_dir}")
+        adapter_weights = torch.load(checkpoint, map_location="cpu")
 
-    return model, output_dir
-    
+    shared_weights = {
+        name: value for name, value in adapter_weights.items()
+        if ".v_proj.lora_A." in name
+    }
+    if not shared_weights:
+        raise ValueError(f"No v_proj LoRA-A weights found in {checkpoint}")
+
+    shared_parameters = {
+        name: param for name, param in model.named_parameters()
+        if ".v_proj.lora_A.default." in name
+    }
+    if not shared_parameters:
+        raise ValueError("The target adapter has no v_proj LoRA-A parameters to share")
+
+    result = set_peft_model_state_dict(model, shared_weights, adapter_name="default")
+    if shared_parameters.keys() & set(result.missing_keys) or result.unexpected_keys:
+        raise ValueError(f"v_proj LoRA-A weights in {checkpoint} do not match the target adapter")
+
+    for param in shared_parameters.values():
+        param.requires_grad = False
+    print(f"Loaded and froze {len(shared_parameters)} v_proj LoRA-A parameters from {checkpoint}")
+
 
 def load_and_process_dataset(tokenizer, data_args):
     print("Loading data...")
@@ -220,6 +210,10 @@ def train():
         lora_args,
     ) = parser.parse_args_into_dataclasses()
 
+    lora_a_checkpoint = None
+    if lora_args.lora_A_dir:
+        lora_a_checkpoint = find_lora_a_checkpoint(lora_args.lora_A_dir)
+
     device_map = None
     world_size = int(os.environ.get("WORLD_SIZE", 1))
     ddp = world_size != 1
@@ -268,7 +262,10 @@ def train():
             model.model_parallel = True
 
     model = get_peft_model(model, lora_config)
-    model, training_args.output_dir = load_lora_A_weights(model, lora_args.lora_A_dir, target_modules=["v_proj"], output_dir=training_args.output_dir)
+    if lora_a_checkpoint is not None:
+        load_lora_A_weights(model, lora_a_checkpoint)
+    elif "plan" in training_args.output_dir:
+        training_args.output_dir = training_args.output_dir.replace("v3", "v2")
     
     if training_args.flash_attn:
         for name, module in model.named_modules():

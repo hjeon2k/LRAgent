@@ -23,25 +23,27 @@ If you want to enable web search during agent execution, create a **Google Progr
 
 ## 1) Train LoRA adapters
 
-1. Install the LoRA training environment:
+1. Create and activate a dedicated LoRA training environment:
 
    ```bash
-   conda create -n lora python==3.11 && pip install -r requirements_lora.yaml
+   conda create -n lora python=3.11
+   conda activate lora
+   python -m pip install -r requirements_lora.yaml
+   python -m pip check
+   python Self_Plan/Train/train_lora.py --help
    ```
 
-   Pinned versions include torch 2.9.0 + CUDA 12.8 wheels, transformers 4.57.1, peft 0.17.1.
+   The training pins include torch 2.9.0 (CUDA 12.8), Transformers 4.57.1, and PEFT 0.17.1. Use the separate runtime environment in section 2 for serving. If DeepSpeed needs to build CUDA extensions, point `CUDA_HOME` to a toolkit with `nvcc` that matches the training environment's PyTorch CUDA version.
 
-2. Launch training:
+2. Set `gpu`, `qa`, `model`, and LoRA hyperparameters in `Scripts/fastchat_lora.sh`, then launch training:
 
    ```bash
    bash Scripts/fastchat_lora.sh
    ```
 
-   Set `gpu`, `agents`, `qa`, `model`, and LoRA hyperparameters inside the script.
+   The script trains `plan` first, or reuses its saved adapter weights if present. It then loads and freezes `plan`'s `v_proj` LoRA-A weights when training `action` and `reflect`. Keep `plan` first in `agents` for a fresh run. To follow the HotpotQA serving example below, set `qa="hotpotqa"`.
 
-Outputs are written under:
-
-* `Self_Plan/Train/output/...`
+   With the default model and `proj="all"`, the HotpotQA output directories are `Self_Plan/Train/output/llama-3_1-8b/hotpotqa/proj_all/5e-5/10ep/plan` and `Self_Plan/Train/output/llama-3_1-8b/hotpotqa/proj_all/6e-5/10ep/{action,reflect}`.
 
 
 ## 2) Runtime setup 
@@ -111,11 +113,11 @@ a stock FlashAttention-2 wheel is still required for the padded / varlen (non-Lo
    CUDA_VISIBLE_DEVICES=0 PEFT_SHARE_BASE_WEIGHTS=true python3 -m fastchat.serve.multi_model_worker \
        --port 31022 --worker http://localhost:31022 \
        --host localhost \
-       --model-path Self_Plan/Train/output/llama-3_1-8b/hotpotqa/v2/5e-5/10ep/plan/ \
+       --model-path Self_Plan/Train/output/llama-3_1-8b/hotpotqa/proj_all/5e-5/10ep/plan/ \
        --model-names "plan" \
-       --model-path Self_Plan/Train/output/llama-3_1-8b/hotpotqa/v3/6e-5/10ep/action/ \
+       --model-path Self_Plan/Train/output/llama-3_1-8b/hotpotqa/proj_all/6e-5/10ep/action/ \
        --model-names "action" \
-       --model-path Self_Plan/Train/output/llama-3_1-8b/hotpotqa/v3/6e-5/10ep/reflect/ \
+       --model-path Self_Plan/Train/output/llama-3_1-8b/hotpotqa/proj_all/6e-5/10ep/reflect/ \
        --model-names "reflect" \
        --max-gpu-memory 40Gib \
        --dtype float16 \
