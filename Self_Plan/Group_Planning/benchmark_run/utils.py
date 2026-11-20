@@ -177,34 +177,53 @@ def _validate_server(address):
     print(f'No protocol provided, using "{PROTOCOL}"')
     return f'{PROTOCOL}{address}'
 
-def parse_result(result):
-    responses = []
-    try:
-        for i in range(len(result)):
-            snippet = result[i]['snippet'] if 'snippet' in result[i] else ""
-            if snippet != "":
-                responses.append(snippet)
-            pass
-    except:
-        return responses
+def parse_result(result, field="snippet"):
+    return [
+        item[field]
+        for item in result
+        if isinstance(item, dict) and isinstance(item.get(field), str) and item[field]
+    ]
 
-    return responses
 
 def call_web_search(query, count: int = 5):
-    CX = "your id"
-    API_KEY = "your api key"
-    params = {
-            "key": API_KEY,
-            "cx": CX,
-            "q": query.strip('"').strip("'"),
-            "num": count
-    }
+    provider = os.environ.get("LRAGENT_SEARCH_PROVIDER", "google")
+    query = query.strip('"').strip("'")
+    headers = {}
+
+    if provider == "google":
+        key = os.environ.get("GOOGLE_API_KEY")
+        cx = os.environ.get("GOOGLE_CSE_ID")
+        if not key or not cx:
+            return None
+        url = "https://www.googleapis.com/customsearch/v1"
+        params = {"key": key, "cx": cx, "q": query, "num": count}
+        field = "snippet"
+    elif provider == "brave":
+        key = os.environ.get("BRAVE_SEARCH_API_KEY")
+        if not key:
+            return None
+        url = "https://api.search.brave.com/res/v1/web/search"
+        params = {"q": query, "count": count}
+        headers["X-Subscription-Token"] = key
+        field = "description"
+    else:
+        raise ValueError("LRAGENT_SEARCH_PROVIDER must be google or brave")
+
     try:
-        response = requests.get("https://www.googleapis.com/customsearch/v1", params=params)
+        response = requests.get(url, params=params, headers=headers, timeout=30)
+        response.raise_for_status()
         results = response.json()
-        return parse_result(results['items'])
-    except:
-        pass
+    except (requests.RequestException, ValueError):
+        return None
 
-    return None
+    if not isinstance(results, dict):
+        return None
+    if provider == "brave":
+        results = results.get("web")
+        if not isinstance(results, dict):
+            return None
+        items = results.get("results")
+    else:
+        items = results.get("items")
 
+    return parse_result(items, field) if isinstance(items, list) else None
